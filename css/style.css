@@ -19,6 +19,12 @@
     transition: all 0.3s ease;
 }
 
+.btn-lg {
+  height: 4rem; /* Equivalent to h-16 in Tailwind CSS */
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities;

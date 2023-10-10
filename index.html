@@ -1,135 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Langit Watch Newest</title>
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Langit Watch Newest</title>
-  <!-- Icon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css" />
-  <!-- My CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,400&display=swap"
-    rel="stylesheet" />
+    <!-- Swipper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
-  <!-- Swipper CSS -->
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        container: {
-          padding: {
-            DEFAULT: "15px",
-          },
-        },
-        screens: {
-          sm: "640px",
-          md: "768px",
-          lg: "960px",
-          xl: "1330px",
-        },
-        extend: {
-          colors: {
-            primary: "#242e2b",
-            secondary: "#808080",
-            accent: {
-              DEFAULT: "#1cbccf",
-              secondary: "#18abbc",
-              tertiary: "#90c6cd",
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            padding: {
+              DEFAULT: "15px",
             },
-            grey: "#e8f0f1",
           },
-          fontFamily: {
-            primary: "Poppins",
+          screens: {
+            sm: "640px",
+            md: "768px",
+            lg: "960px",
+            xl: "1330px",
           },
-          boxShadow: {
-            custom1: "0px 2px 40px 0px rgba(8, 70, 78, 0.08)",
-            custom2: "0px 0px 30px 0px rgba(8, 73, 81, 0.06)",
-          },
-          backgroundImage: {
-            hero: "url()",
-            'gresik': "url('./img/image-gresik.png')"
+          extend: {
+            colors: {
+              primary: "#242e2b",
+              secondary: "#808080",
+              accent: {
+                DEFAULT: "#1cbccf",
+                secondary: "#18abbc",
+                tertiary: "#90c6cd",
+              },
+              grey: "#e8f0f1",
+            },
+            fontFamily: {
+              primary: "Poppins",
+            },
+            boxShadow: {
+              custom1: "0px 2px 40px 0px rgba(8, 70, 78, 0.08)",
+              custom2: "0px 0px 30px 0px rgba(8, 73, 81, 0.06)",
+            },
+            backgroundImage: {
+              hero: "url()",
+              gresik: "url('./img/image-gresik.png')",
+            },
           },
         },
-      },
-    };
-  </script>
-</head>
+      };
+    </script>
+  </head>
 
-<body>
-
-  <div class="max-w-[1440px] w-full mx-auto">
-    <!-- Start Header -->
-    <header class="py-8 lg:pt-4 lg:pb-6 bg-grey">
-      <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
-        <div class="flex justify-center items-center lg:justify-normal">
-          <a href="#">
-            <img src="img/header_new.png" alt="" />
-          </a>
-        </div>
-
-        <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
-          <div class="flex justify-center items-center gap-x-2 lg:justify-normal text-2xl">
-            Report a Location
+  <body>
+    <div class="w-full mx-auto">
+      <!-- Start Header -->
+      <header class="py-8 lg:pt-4 lg:pb-6 bg-grey">
+        <div
+          class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0"
+        >
+          <div class="flex justify-center items-center lg:justify-normal">
+            <a href="#">
+              <img src="img/header_new.png" alt="" />
+            </a>
           </div>
-          <button class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0">
-            Support
-          </button>
-          <!-- Mobile nav -->
-          <nav
-            class="mnav bg-pink-200 fixed w-[300px] top-0 h-screen -left-[300px] shadow-2xl lg:hidden transition-all duration-300 z-20">
-            <!-- Nav trigger btn -->
-            <div
-              class="mnav__close-btn bg-black w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all">
-              <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
-            </div>
 
-            <!-- logo, list,form -->
-            <div class="px-12 flex flex-col gap-y-12 h-full">
-              <!-- logo -->
-              <a href="#">
-                <img src="img/header_new.png" alt="" />
-              </a>
-              <!-- list navbar -->
-              <ul class="flex flex-col gap-y-5">
+          <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+            <div
+              class="flex justify-center items-center gap-x-2 lg:justify-normal text-xl lg:text-2xl"
+            >
+              Report a Location
+            </div>
+            <button
+              class="btn btn-sm btn-outline w-[150px] lg:w-auto mx-auto lg:mx-0"
+            >
+              Support
+            </button>
+            <!-- Mobile nav -->
+            <nav
+              class="mnav bg-pink-200 fixed w-[300px] top-0 h-screen -left-[300px] shadow-2xl lg:hidden transition-all duration-300 z-20"
+            >
+              <!-- Nav trigger btn -->
+              <div
+                class="mnav__close-btn bg-black w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all"
+              >
+                <i
+                  class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"
+                ></i>
+              </div>
+
+              <!-- logo, list -->
+              <div class="px-12 flex flex-col gap-y-12 h-full">
+                <!-- logo -->
+                <a href="#">
+                  <img src="img/header_new.png" alt="" />
+                </a>
+                <!-- list navbar -->
+                <ul class="flex flex-col gap-y-5">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-black hover:text-white transition-all duration-300"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-black hover:text-white transition-all duration-300"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-black hover:text-white transition-all duration-300"
+                      >Campaign</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-black hover:text-white transition-all duration-300"
+                      >Impact</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-black hover:text-white transition-all duration-300"
+                      >Report</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-black hover:text-white transition-all duration-300"
+                      >Partner</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-black hover:text-white transition-all duration-300"
+                      >FAQ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <!-- Desktop Nav -->
+            <nav
+              class="bg-white absolute w-full left-0 -bottom-[86px] h-16 rounded-[10px] hidden lg:flex items-center justify-center lg:text-xl lg:gap-x-4"
+            >
+              <ul class="flex gap-x-4">
                 <li>
-                  <a href="#" class="text-black hover:text-white transition-all duration-300">Home</a>
+                  <a
+                    href="#"
+                    class="text-black hover:text-white transition-all duration-300"
+                    >Home</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-black hover:text-white transition-all duration-300">Home</a>
+                  <a
+                    href="#"
+                    class="text-black hover:text-white transition-all duration-300"
+                    >Campaign</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-black hover:text-white transition-all duration-300">Campaign</a>
+                  <a
+                    href="#"
+                    class="text-black hover:text-white transition-all duration-300"
+                    >Impact</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-black hover:text-white transition-all duration-300">Impact</a>
+                  <a
+                    href="#"
+                    class="text-black hover:text-white transition-all duration-300"
+                    >Report</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-black hover:text-white transition-all duration-300">Report</a>
+                  <a
+                    href="#"
+                    class="text-black hover:text-white transition-all duration-300"
+                    >Partner</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-black hover:text-white transition-all duration-300">Partner</a>
-                </li>
-                <li>
-                  <a href="#" class="text-black hover:text-white transition-all duration-300">FAQ</a>
+                  <a
+                    href="#"
+                    class="text-black hover:text-white transition-all duration-300"
+                    >FAQ</a
+                  >
                 </li>
               </ul>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <!-- End Header-->
+      <!-- End Header-->
 
-    <!-- Start Hero Section -->
-    <section class="hero my-0">
-      <div class="w-full bg-center bg-cover h-screen" style="
+      <section
+        class="hero bg-cover bg-center overflow-hidden py-12 xl:pt-12 xl:pb-0"
+        style="
           background-image: linear-gradient(
               to right,
               rgba(0, 0, 0, 1) 20%,
@@ -138,194 +228,257 @@
               rgba(254, 246, 246, 0) 100%
             ),
             url(https://images.unsplash.com/photo-1695912740580-577d50a525a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
-        ">
-        <div class="flex justify-start w-full h-full bg-gray-900 bg-opacity-50 py-12 mx-auto items-center">
-          <div class="text-start">
-            <div class="container px-10 lg:px-20 mx-auto">
-              <div class="max-w-4xl mx-auto text-start">
-                <span class="text-gray-200 font-semibold uppercase tracking-widest">Together With You!</span>
-                <h2 class="mt-8 mb-6 text-4xl lg:text-5xl font-bold text-gray-100">
-                  Delivering a Naked-Truth Report on Ambient Air Pollution in
-                  Indonesia
-                </h2>
-                <p class="mx-auto mb-5 text-lg text-gray-300">
-                  Using the USEPA Standard Mobile-AAQMS, we aim to provide
-                  better insight reports to help local policymakers in Indonesia
-                  create eco-centric policies.
-                </p>
-                <p class="mx-auto mb-7 text-lg text-gray-300">
-                  The fun part is that you decide where it goes!
-                </p>
-                <button class="btn btn-sm btn-outline w-[240px] lg:w-auto lg:mx-0">
-                  Read More
-                </button>
+        "
+      >
+        <div class="container mx-auto h-screen">
+          <div class="flex flex-col xl:flex-row items-center h-full">
+            <div
+              class="hero__text xl:w-[55%] text-center xl:text-left text-white"
+            >
+              <h1
+                class="text-[36px] xl:text-[64px] font-semibold xl:mt-20 mb-2"
+              >
+                Together With You!
+              </h1>
+              <h1
+                class="text-[36px] xl:text-[40px] font-semibold xl:mt-5 mb-6 leading-none"
+              >
+                Delivering a Naked-Truth Report on Ambient Air Pollution in
+                Indonesia
+              </h1>
+              <p class="mb-[30px] md:max-w-xl text-center xl:text-left">
+                Using the USEPA Standard Mobile-AAQMS, we aim to provide better
+                insight reports to help local policymakers in Indonesia create
+                eco-centric policies.
+              </p>
+              <p class="mb-[42px] md:max-w-xl text-center xl:text-left">
+                Using the USEPA Standard Mobile-AAQMS, we aim to provide better
+                insight reports to help local policymakers in Indonesia create
+                eco-centric policies.
+              </p>
+              <button class="btn btn-lg btn-outline mx-auto xl:mx-0">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End hero section -->
+
+      <section
+        class="lg:aspect-square w-full bg-red-500 grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2"
+      >
+        <div class="bg-yellow-300">01</div>
+        <div
+          class="bg-[url('/img/image-gresik.png')] bg-cover flex flex-row-reverse h-full lg:h-full"
+        >
+          <div
+            class="text-white w-full bg-gradient-to-l from-[#009ee6] from-25% pr-20 flex flex-col items-end gap-7 lg:py-[70px]"
+          >
+            <div class="gap-6 flex flex-col">
+              <h1 class="font-bold lg:text-3xl flex">Crowd Funding Phase</h1>
+              <div class="flex flex-col justify-end items-end gap-2">
+                <div class="max-w-[300px] w-full h-4 rounded-xl bg-white">
+                  <div class="w-[230px] h-full rounded-xl bg-red-600"></div>
+                </div>
+                <span class="w-full text-center text-lg font-normal">
+                  Rp 8.000.000 / Rp. 11.900.000
+                </span>
+              </div>
+            </div>
+            <div class="text-lg font-bold">Cost & Efforts Breakdown</div>
+          </div>
+        </div>
+        <div class="bg-green-300">03</div>
+        <div class="bg-gray-300"></div>
+      </section>
+
+      <!-- Section Impact -->
+      <section class="impact bg-pink-300 py-12 xl:py-0">
+        <div class="impact__container">
+          <div>
+            <div class="hidden">
+              <img src="img/image-gresik.png" alt="" />
+            </div>
+            <!-- Slider -->
+            <div class="max-w[98%] xl:max-w-[710px]">
+              <div class="swiper h-[400px]">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <div>
+                      <div>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- End hero section -->
+      <!-- Section Impact -->
 
-    <!-- Start section grid -->
-    <section>
-
-    </section>
-
-    <!-- End Section grid -->
-    <section class="lg:aspect-square w-full bg-red-500 grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2">
-      <div class="bg-yellow-300">01</div>
-      <div class="bg-[url('/img/image-gresik.png')] bg-cover flex flex-row-reverse h-screen lg:h-full   ">
-        <!-- <div class="pr-[80px] bg-[#009ee6]"> </div> -->
-        <div class="text-white w-full bg-gradient-to-l from-[#009ee6] from-25% pr-20 flex flex-col items-end gap-7 lg:py-[70px]">
-          <div class="gap-6 flex flex-col">
-            <h1 class="font-bold lg:text-3xl flex">
-              Crowd Funding Phase
-            </h1>
-            <div class="flex flex-col justify-end items-end gap-2">
-              <div class="max-w-[300px] w-full h-4 rounded-xl bg-white">
-                <div class="w-[230px] h-full rounded-xl bg-red-600"></div>
-              </div>
-              <span class="w-full text-center text-lg font-normal ">
-                Rp 8.000.000 / Rp. 11.900.000
-              </span>
-            </div>
-          </div>
-          <div class="text-lg font-bold"> 
-            Cost & Efforts Breakdown 
-          </div>
-        </div>
-      </div>
-      <div class="bg-green-300">03</div>
-      <div class="bg-gray-300">
-        
-      </div>
-    </section>
-
-    <!-- Section Ongoing -->
-
-    <section class="hero my-0">
-      <div class="w-full bg-center bg-cover h-screen" style="
-          background-image: linear-gradient(to right, #000000df, #faf9f800),
-            url(https://images.unsplash.com/photo-1695912740580-577d50a525a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
-        ">
-        <div class="flex justify-start w-full h-full bg-gray-900 bg-opacity-50 py-12">
-          <div class="text-start">
-            <div class="container px-10 lg:px-20 mx-auto">
-              <div class="max-w-4xl mx-auto text-start">
-                <span class="text-gray-200 font-semibold uppercase tracking-widest">Together With You!</span>
-                <h2 class="mt-8 mb-6 text-4xl lg:text-5xl font-bold text-gray-100">
-                  Delivering a Naked-Truth Report on Ambient Air Pollution in
-                  Indonesia
-                </h2>
-                <p class="mx-auto mb-5 text-lg text-gray-300">
-                  Using the USEPA Standard Mobile-AAQMS, we aim to provide
-                  better insight reports to help local policymakers in Indonesia
-                  create eco-centric policies.
-                </p>
-                <p class="mx-auto mb-7 text-lg text-gray-300">
-                  The fun part is that you decide where it goes!
-                </p>
-                <button class="btn btn-sm btn-outline w-[240px] lg:w-auto lg:mx-0">
-                  Read More
-                </button>
+      <!-- <section class="impact my-0">
+        <div
+          class="w-full bg-center bg-cover h-screen"
+          style="
+            background-image: linear-gradient(
+                to left,
+                rgba(0, 0, 0, 1) 20%,
+                rgba(0, 0, 0, 0.7) 40%,
+                rgba(0, 0, 0, 0.4) 70%,
+                rgba(254, 246, 246, 0) 100%
+              ),
+              url(https://plus.unsplash.com/premium_photo-1669904021300-1a0dcf58379c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80);
+          "
+        >
+          <div
+            class="flex justify-end w-full h-full bg-gray-900 bg-opacity-50 py-12 mx-auto items-center"
+          >
+            <div class="text-start">
+              <div class="container px-10 lg:px-20 mx-auto">
+                <div class="max-w-4xl mx-auto text-end">
+                  <h1
+                    class="text-gray-200 font-bold uppercase tracking-widest text-4xl"
+                  >
+                    #impact
+                  </h1>
+                  <h2
+                    class="mt-8 mb-6 text-2xl lg:text-5xl font-bold text-gray-100"
+                  >
+                    Small Act, Huge Impact
+                  </h2>
+                  <p class="mx-auto mb-5 text-lg text-gray-300">
+                    Langit Watch was first introduced to the public through a
+                    network of large mosques in Greater Malang, the An-Nur
+                    Mosque in Batu City, the Sabillah Mosque in Malang City, and
+                    the Gadang Mosque (near the border of Malang City and
+                    Regency).
+                  </p>
+                  <p class="mx-auto mb-7 text-lg text-gray-300">
+                    The AAQMS mobile used by Langit Watch has been completed a
+                    continuous analysis for one week for each mosque to
+                    determine the type and highest levels of pollutants around
+                    the mosque.
+                  </p>
+                  <p class="mx-auto mb-7 text-lg text-gray-300">
+                    While the AAQMS is analyzing, our Langit Protector also
+                    shares information through an open seminar with everyone.
+                  </p>
+                  <p class="mx-auto mb-7 text-lg text-gray-300">
+                    Most pollutants are produced by cars and motorbikes that
+                    keep the engine running even in the parking area.
+                  </p>
+                  <p class="mx-auto mb-7 text-lg text-gray-300">
+                    Together with Langit Watch, the management of the three
+                    mosques agreed to make regulations to turn off mo
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline w-[240px] lg:w-auto lg:mx-0 float-right"
+                  >
+                    Read More
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section> -->
 
-    <!-- End Section On going -->
+      <!-- End Section Impact -->
 
-    <!-- Section Impact -->
+      <!-- Section Report  -->
 
-    <section class="impact my-0">
-      <div class="w-full bg-center bg-cover h-screen" style="
-          background-image: linear-gradient(
-              to left,
-              rgba(0, 0, 0, 1) 20%,
-              rgba(0, 0, 0, 0.7) 40%,
-              rgba(0, 0, 0, 0.4) 70%,
-              rgba(254, 246, 246, 0) 100%
-            ),
-            url(https://plus.unsplash.com/premium_photo-1669904021300-1a0dcf58379c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80);
-        ">
-        <div class="flex justify-end w-full h-full bg-gray-900 bg-opacity-50 py-12 mx-auto items-center">
-          <div class="text-start">
-            <div class="container px-10 lg:px-20 mx-auto">
-              <div class="max-w-4xl mx-auto text-end">
-                <h1 class="text-gray-200 font-bold uppercase tracking-widest text-4xl">
-                  #impact
-                </h1>
-                <h2 class="mt-8 mb-6 text-2xl lg:text-5xl font-bold text-gray-100">
-                  Small Act, Huge Impact
-                </h2>
-                <p class="mx-auto mb-5 text-lg text-gray-300">
-                  Langit Watch was first introduced to the public through a
-                  network of large mosques in Greater Malang, the An-Nur Mosque
-                  in Batu City, the Sabillah Mosque in Malang City, and the
-                  Gadang Mosque (near the border of Malang City and Regency).
-                </p>
-                <p class="mx-auto mb-7 text-lg text-gray-300">
-                  The AAQMS mobile used by Langit Watch has been completed a
-                  continuous analysis for one week for each mosque to determine
-                  the type and highest levels of pollutants around the mosque.
-                </p>
-                <p class="mx-auto mb-7 text-lg text-gray-300">
-                  While the AAQMS is analyzing, our Langit Protector also shares
-                  information through an open seminar with everyone.
-                </p>
-                <p class="mx-auto mb-7 text-lg text-gray-300">
-                  Most pollutants are produced by cars and motorbikes that keep
-                  the engine running even in the parking area.
-                </p>
-                <p class="mx-auto mb-7 text-lg text-gray-300">
-                  Together with Langit Watch, the management of the three
-                  mosques agreed to make regulations to turn off mo
-                </p>
-                <button class="btn btn-sm btn-outline w-[240px] lg:w-auto lg:mx-0 float-right">
-                  Read More
-                </button>
-              </div>
+      <section
+        class="report bg-purple-300 xl:pt-12 xl:pb-0 overflow-hidden"
+      >
+        <div class="container mx-auto h-full">
+          <div
+            class="flex flex-col xl:flex-row items-center justify-between h-full"
+          >
+            <div
+              class="hero__text xl:w-[60%] text-center xl:text-left text-white"
+            >
+              <h1
+                class="text-[50px] xl:text-[64px] font-semibold"
+              >
+                YOU
+              </h1>
+              <h1
+                class="text-[50px] xl:text-[40px] font-bold leading-none"
+              >
+                DESERVE
+              </h1>
+              <h1
+                class="text-[50px] xl:text-[64px] font-semibold leading-none"
+              >
+                THE
+              </h1>
+              <h1
+                class="text-[50px] xl:text-[64px] font-semibold leading-none"
+              >
+                TRUTH
+              </h1>
+              <p class="mb-[10px] md:max-w-xl text-center xl:text-left">
+                (even if it hurts)
+              </p>
+              <button class="btn btn-lg btn-outline mx-auto xl:mx-0 mb-5">
+                Read More
+              </button>
+            </div>
+            <div>
+              <img src="img/testpict.png" alt="" style="width: 70%;">
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- End Section Impact -->
-
-    <!-- Section Report  -->
-    <section class="report bg-purple-300 py-12 xl:pt-12 xl:pb-0 overflow-hidden">
-      <div class="container h-full mx-auto">
-        <div class="flex flex-col xl:flex-row items-center justify-between h-full">
-          <div class="report__text xl:w-[100%] text-center xl:text-left">
-            <h1 class="text-7xl font-normal text-slate-100 mb-3">YOU</h1>
-            <h1 class="text-8xl font-semibold text-slate-100 mb-3">DESERVE</h1>
-            <h1 class="text-7xl font-normal text-slate-100 mb-3">THE</h1>
-            <h1 class="text-7xl font-normal text-slate-100 mb-3">TRUTH</h1>
-            <p class="text-3xl font-normal text-slate-100 mb-6">(even if it hurts)</p>
-            <button class="btn btn-sm btn-outline w-[240px] lg:w-auto lg:mx-0">See Interactive Langit Report</button>
-          </div>
-          <div class="report__image xl:flex max-w-[814px] self-end">
-            <img src="img/testpict.png" alt="">
+      <!-- <section
+        class="report bg-purple-300 py-12 xl:pt-12 xl:pb-0 overflow-hidden"
+      >
+        <div class="container h-full mx-auto">
+          <div
+            class="flex flex-col xl:flex-row items-center justify-between h-full"
+          >
+            <div class="report__text xl:w-[100%] text-center xl:text-left">
+              <h1 class="text-7xl font-normal text-slate-100 mb-3">YOU</h1>
+              <h1 class="text-8xl font-semibold text-slate-100 mb-3">
+                DESERVE
+              </h1>
+              <h1 class="text-7xl font-normal text-slate-100 mb-3">THE</h1>
+              <h1 class="text-7xl font-normal text-slate-100 mb-3">TRUTH</h1>
+              <p class="text-3xl font-normal text-slate-100 mb-6">
+                (even if it hurts)
+              </p>
+              <button
+                class="btn btn-sm btn-outline w-[240px] lg:w-auto lg:mx-0"
+              >
+                See Interactive Langit Report
+              </button>
+            </div>
+            <div class="report__image xl:flex max-w-[814px] self-end">
+              <img src="img/testpict.png" alt="" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section> -->
 
-    <!-- End Section Report -->
+      <!-- End Section Report -->
+    </div>
+    <div class="h-[4000px]"></div>
 
-  </div>
-
-  <!-- Swipper -->
-  <script src="js/swiper-bundle.min.js"></script>
-  <!-- Scroll Reveal -->
-  <script src="js/scrollreveal.min.js"></script>
-  <!-- Main js -->
-  <script src="js/main.js"></script>
-</body>
-
+    <!-- Swipper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- Main js -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
