@@ -25,6 +25,16 @@
   padding-right: 50px;
 }
 
+.faq__item.open .faq__answer {
+  height: 100%;
+}
+
+
+
+
+
+
+
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities;
