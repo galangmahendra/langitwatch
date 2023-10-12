@@ -92,79 +92,6 @@
             >
               Support
             </button>
-            <!-- Mobile nav -->
-            <nav
-              class="mnav bg-pink-200 fixed w-[300px] top-0 h-screen -left-[300px] shadow-2xl lg:hidden transition-all duration-300 z-20"
-            >
-              <!-- Nav trigger btn -->
-              <div
-                class="mnav__close-btn bg-black w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all"
-              >
-                <i
-                  class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"
-                ></i>
-              </div>
-
-              <!-- logo, list -->
-              <div class="px-12 flex flex-col gap-y-12 h-full">
-                <!-- logo -->
-                <a href="#">
-                  <img src="img/header_new.png" alt="" />
-                </a>
-                <!-- list navbar -->
-                <ul class="flex flex-col gap-y-5">
-                  <li>
-                    <a
-                      href="#"
-                      class="text-black hover:text-white transition-all duration-300"
-                      >Home</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-black hover:text-white transition-all duration-300"
-                      >Home</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-black hover:text-white transition-all duration-300"
-                      >Campaign</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-black hover:text-white transition-all duration-300"
-                      >Impact</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-black hover:text-white transition-all duration-300"
-                      >Report</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-black hover:text-white transition-all duration-300"
-                      >Partner</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-black hover:text-white transition-all duration-300"
-                      >FAQ</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </nav>
           </div>
         </div>
       </header>
@@ -348,15 +275,18 @@
           class="bg-[url('/img/image-gresik.png')] bg-cover flex flex-row-reverse h-full lg:h-full"
         >
           <div
-            class="text-white w-full bg-gradient-to-l from-[#009ee6] from-25% pr-20 flex flex-col items-end gap-7 lg:py-[70px]"
+            class="text-white w-full bg-gradient-to-l from-[#009ee6] from-25% xl:pr-20 pr-10 flex flex-col items-end gap-8 lg:py-[70px] py-12"
           >
-            <div class="gap-6 flex flex-col">
-              <h1 class="font-bold lg:text-3xl flex">
-                Placement Cost Crowd Funding
-              </h1>
+            <div class="flex flex-col">
+              <div
+                class="flex mb-10 items-start text-white text-3xl text-right font-bold"
+              >
+                <span> Placement Crowd Funding </span>
+              </div>
+
               <div class="flex flex-col justify-end items-end gap-2">
                 <div class="max-w-[300px] w-full h-4 rounded-xl bg-white">
-                  <div class="w-[230px] h-full rounded-xl bg-red-600"></div>
+                  <div class="w-[230px] h-full rounded-xl bg-blue-800"></div>
                 </div>
                 <span class="w-full text-center text-lg font-normal">
                   Rp 8.000.000 / Rp. 11.900.000
@@ -422,12 +352,15 @@
           class="bg-white flex flex-col py-14 pl-5 pr-5 sm:pl-[80px] sm:pr-3 justify-center"
         >
           <div
-            class="flex mb-10 items-start text-black text-3xl text-left font-bold"
+            class="flex mb-10 items-start text-black xl:text-3xl text-3xl text-left font-bold flex-row gap-5"
           >
             <span> Top Petitions </span>
+            <button class="btn btn-sm btn-outline mx-auto xl:mx-0 text-sm xl:text-lg w-30">
+              See More
+            </button>
           </div>
 
-          <div class="flex min-h-[80px] gap-5 items-start">
+          <div class="flex min-h-[80px] gap-5 items-start mb-5">
             <div
               class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
             >
@@ -454,7 +387,7 @@
             </div>
           </div>
 
-          <div class="flex min-h-[80px] gap-5 items-start">
+          <div class="flex min-h-[80px] gap-5 items-start mb-5">
             <div
               class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
             >
@@ -481,7 +414,7 @@
             </div>
           </div>
 
-          <div class="flex min-h-[80px] gap-5 items-start">
+          <div class="flex min-h-[80px] gap-5 items-start mb-5">
             <div
               class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
             >
@@ -508,7 +441,7 @@
             </div>
           </div>
 
-          <div class="flex min-h-[80px] gap-5 items-start">
+          <div class="flex min-h-[80px] gap-5 items-start mb-5">
             <div
               class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
             >
@@ -535,7 +468,7 @@
             </div>
           </div>
 
-          <div class="flex min-h-[80px] gap-5 items-start">
+          <div class="flex min-h-[80px] gap-5 items-start mb-5">
             <div
               class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
             >
@@ -563,38 +496,57 @@
           </div>
         </div>
       </section>
-      
-            <!-- Section Impact -->
-      <!-- <section class="relative impact bg-white h-screen w-screen">
+
+      <!-- Section Impact -->
+
+      <section class="relative impact bg-white h-screen w-screen">
         <div class="relative w-full h-full">
           <div class="container-image w-full h-full">
             <div class="mySlides w-full h-full">
-              <img src="img/testpict.png" alt="" class="bg-cover w-full h-full" />
+              <img
+                src="img/impact1.png"
+                alt=""
+                class="bg-cover w-full h-full"
+              />
             </div>
             <div class="mySlides w-full h-full">
               <img
-                src="https://images.unsplash.com/photo-1695912740580-577d50a525a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                alt="" class="bg-cover w-full h-full" />
-            </div>
-            <div class="mySlides w-full h-full">
-              <img src="img/testpict.png" alt="" class="bg-cover w-full h-full" />
+                src="img/mobiaircar.png"
+                alt=""
+                class="bg-cover w-full h-full"
+              />
             </div>
             <div class="mySlides w-full h-full">
               <img
-                src="https://images.unsplash.com/photo-1695912740580-577d50a525a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                alt="" class="bg-cover w-full h-full" />
+                src="img/testpict.png"
+                alt=""
+                class="bg-cover w-full h-full"
+              />
+            </div>
+            <div class="mySlides w-full h-full">
+              <img
+                src="img/mobiaircar.png"
+                alt=""
+                class="bg-cover w-full h-full"
+              />
             </div>
           </div>
-          <div class="absolute bottom-12 p-2 w-fit left-2/4 -translate-x-2/4 flex gap-3">
+          <div
+            class="absolute bottom-12 p-2 w-fit left-2/4 -translate-x-2/4 flex gap-3"
+          >
             <div class="dot w-4 h-4 rounded-xl bg-yellow-400"></div>
             <div class="dot w-4 h-4 rounded-xl bg-[#bbb]"></div>
             <div class="dot w-4 h-4 rounded-xl bg-[#bbb]"></div>
             <div class="dot w-4 h-4 rounded-xl bg-[#bbb]"></div>
           </div>
         </div>
+
         <div
-          class="absolute top-0 right-0 bottom-0 w-4/5 bg-gradient-to-l from-[#1e2186] from-15% flex flex-col items-end text-white px-28 py-20">
-          <span class="text-3xl font-semibold px-6 py-3 rounded-full bg-[#019845] mb-16">
+          class="absolute top-0 right-0 bottom-0 w-4/5 bg-gradient-to-l from-[#1e2186] from-15% flex flex-col items-end text-white px-28 py-20"
+        >
+          <span
+            class="text-3xl font-semibold px-6 py-3 rounded-full bg-[#019845] mb-16"
+          >
             <a> Read Story & Report </a>
           </span>
           <span class="text-3xl font-semibold mb-9">
@@ -629,16 +581,17 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
+
       <!-- End Section Impact -->
 
       <!-- Section Report  -->
 
       <section class="report bg-purple-200 xl:pt-12 xl:pb-0 overflow-hidden">
-        <div class="container mx-auto h-full">
+        <div class="container mx-auto h-full relative">
           <div class="flex flex-col xl:flex-row items-center justify-between">
             <div
-              class="hero__text xl:w-[60%] text-center xl:text-left text-white"
+              class="hero__text xl:w-[80%] text-center xl:text-left text-white"
             >
               <h1 class="text-[50px] xl:text-[100px] font-semibold">YOU</h1>
               <h1 class="text-[50px] xl:text-[100px] font-bold leading-none">
@@ -665,7 +618,7 @@
                 See Interactive Langit Report
               </button>
             </div>
-            <div class="flex items-center justify-center max-h-full">
+            <div class="flex items-center justify-center max-h-full absolute">
               <img src="img/platform.png" alt="" />
             </div>
           </div>
