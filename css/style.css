@@ -29,7 +29,126 @@
   height: 100%;
 }
 
-
+.btn_campaign{
+  background-color: yellow;
+  color: red;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top:80vh;
+  margin-left:-25rem;
+  position:absolute;
+}
+.btn_cross{
+  width:50px;
+  height:50px;
+  font-size: 36px;
+  font-weight: 700;
+  background-color: yellow;
+  color: red;
+  border-radius:50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_toa{width:700px;margin-top:-300px;margin-left:-50px;}
+.cimg_toa{
+  --x: 20px;
+  --y: 10px;
+  transform:  perspective(1000px) rotateY(var(--_a,40deg));
+  margin-top:18.75rem;
+  margin-left:-1.875rem;
+  animation-name: animate_toa;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
+@keyframes animate_toa{
+  0%{
+    --_a: 0deg;
+  --_c: calc(100% - var(--y));
+  }
+  5%{
+    --_a: 4deg;
+  --_c: calc(100% - var(--y));
+  }
+  10%{
+    --_a: 8deg;
+  --_c: calc(100% - var(--y));
+  }
+  15%{
+    --_a: 12deg;
+  --_c: calc(100% - var(--y));
+  }
+  20%{
+    --_a: 16deg;
+  --_c: calc(100% - var(--y));
+  }
+  25%{
+    --_a: 20deg;
+  --_c: calc(100% - var(--y));
+  }
+  30%{
+    --_a: 24deg;
+  --_c: calc(100% - var(--y));
+  }
+  35%{
+    --_a: 28deg;
+  --_c: calc(100% - var(--y));
+  }
+  40%{
+    --_a: 32deg;
+  --_c: calc(100% - var(--y));
+  }
+  45%{
+    --_a: 36deg;
+  --_c: calc(100% - var(--y));
+  }
+  50%{
+    --_a: 40deg;
+  --_c: calc(100% - var(--y));
+  }
+  55%{
+    --_a: 36deg;
+  --_c: calc(100% - var(--y));
+  }
+  60%{
+    --_a: 32deg;
+  --_c: calc(100% - var(--y));
+  }
+  65%{
+    --_a: 28deg;
+  --_c: calc(100% - var(--y));
+  }
+  70%{
+    --_a: 24deg;
+  --_c: calc(100% - var(--y));
+  }
+  75%{
+    --_a: 20deg;
+  --_c: calc(100% - var(--y));
+  }
+  80%{
+    --_a: 16deg;
+  --_c: calc(100% - var(--y));
+  }
+  85%{
+    --_a: 12deg;
+  --_c: calc(100% - var(--y));
+  }
+  90%{
+    --_a: 8deg;
+  --_c: calc(100% - var(--y));
+  }
+  95%{
+    --_a: 4deg;
+  --_c: calc(100% - var(--y));
+  }
+  100%{
+    --_a: 0deg;
+  --_c: calc(100% - var(--y));
+  }
+}
 @media only screen and (max-width: 768px) {
     .mobi_mobile{
         background-image: linear-gradient( to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.4) 100%, rgba(254, 246, 246, 0) 100% ), url(./img/mobiaircar.png) !important;
@@ -41,7 +160,16 @@
         background-image: linear-gradient( to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.4) 100%, rgba(254, 246, 246, 0) 100% ), url(./img/mobiaircar.png) !important;
         background-position-x: 79% !important;
     }
+    .container_toa{
+      margin-left: -100px;
+      margin-top: 200px;
+    }
+    .container_cyc{
+      margin-top: 300px;
+      margin-left: 50px;
+    }
 }
+
 
 
 
