@@ -69,79 +69,79 @@
   --_c: calc(100% - var(--y));
   }
   5%{
-    --_a: 4deg;
+    --_a: 3deg;
   --_c: calc(100% - var(--y));
   }
   10%{
-    --_a: 8deg;
+    --_a: 6deg;
   --_c: calc(100% - var(--y));
   }
   15%{
-    --_a: 12deg;
+    --_a: 9deg;
   --_c: calc(100% - var(--y));
   }
   20%{
-    --_a: 16deg;
-  --_c: calc(100% - var(--y));
-  }
-  25%{
-    --_a: 20deg;
-  --_c: calc(100% - var(--y));
-  }
-  30%{
-    --_a: 24deg;
-  --_c: calc(100% - var(--y));
-  }
-  35%{
-    --_a: 28deg;
-  --_c: calc(100% - var(--y));
-  }
-  40%{
-    --_a: 32deg;
-  --_c: calc(100% - var(--y));
-  }
-  45%{
-    --_a: 36deg;
-  --_c: calc(100% - var(--y));
-  }
-  50%{
-    --_a: 40deg;
-  --_c: calc(100% - var(--y));
-  }
-  55%{
-    --_a: 36deg;
-  --_c: calc(100% - var(--y));
-  }
-  60%{
-    --_a: 32deg;
-  --_c: calc(100% - var(--y));
-  }
-  65%{
-    --_a: 28deg;
-  --_c: calc(100% - var(--y));
-  }
-  70%{
-    --_a: 24deg;
-  --_c: calc(100% - var(--y));
-  }
-  75%{
-    --_a: 20deg;
-  --_c: calc(100% - var(--y));
-  }
-  80%{
-    --_a: 16deg;
-  --_c: calc(100% - var(--y));
-  }
-  85%{
     --_a: 12deg;
   --_c: calc(100% - var(--y));
   }
+  25%{
+    --_a: 15deg;
+  --_c: calc(100% - var(--y));
+  }
+  30%{
+    --_a: 18deg;
+  --_c: calc(100% - var(--y));
+  }
+  35%{
+    --_a: 21deg;
+  --_c: calc(100% - var(--y));
+  }
+  40%{
+    --_a: 24deg;
+  --_c: calc(100% - var(--y));
+  }
+  45%{
+    --_a: 27deg;
+  --_c: calc(100% - var(--y));
+  }
+  50%{
+    --_a: 30deg;
+  --_c: calc(100% - var(--y));
+  }
+  55%{
+    --_a: 27deg;
+  --_c: calc(100% - var(--y));
+  }
+  60%{
+    --_a: 24deg;
+  --_c: calc(100% - var(--y));
+  }
+  65%{
+    --_a: 21deg;
+  --_c: calc(100% - var(--y));
+  }
+  70%{
+    --_a: 18deg;
+  --_c: calc(100% - var(--y));
+  }
+  75%{
+    --_a: 15deg;
+  --_c: calc(100% - var(--y));
+  }
+  80%{
+    --_a: 12deg;
+  --_c: calc(100% - var(--y));
+  }
+  85%{
+    --_a: 9deg;
+  --_c: calc(100% - var(--y));
+  }
   90%{
-    --_a: 8deg;
+    --_a: 6deg;
   --_c: calc(100% - var(--y));
   }
   95%{
-    --_a: 4deg;
+    --_a: 3deg;
   --_c: calc(100% - var(--y));
   }
   100%{
@@ -168,10 +168,32 @@
       margin-top: 300px;
       margin-left: 50px;
     }
+    .box_toa{
+      width: 300px;
+      margin-left: -20px;
+    }
+    .cimg_toa{
+      margin-left: 30px;
+    }
+    .btn_campaign{
+      font-size: 1.1rem;
+      /* padding: 10px 35px; */
+      margin-left: -20.75rem;
+    }
 }
 
-
-
+@media screen and (max-width: 1024px){
+  .btn_campaign{
+    margin-top:50vh!important;
+    font-size: 1.1rem;
+    /* padding: 10px 35px; */
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px){
+  .btn_campaign{
+    margin-top: 35rem!important;
+  }
+}
 
 
 /* @tailwind base;

@@ -373,71 +373,96 @@
           <div class="flex">
               <div class="flex-1" style="padding:1.875rem;"><a class="btn_cross">+</a></div>
               <div class="flex-1 container_toa">
-                <div class="max-sm:w-96 max-sm:ml-1 box_toa">
+                <div class="min-[640]:w-96 max-sm:ml-1 box_toa">
                   <img src="/img/campaign.png" alt="" class="max-xl:mt-72 max-xl:-ml-2 w-full md:w-full cimg_toa">
                 </div>
               </div>
               <div class="flex-1 container_cyc">
-                <a class="max-sm:mt-96 lg:-ml-76 max-xl:w-64 max-xl:text-lg max-xl:px-8 btn_campaign" onclick="modalCyc()">Create Your Campaign</a>
+                <a class="max-sm:mt-80 lg:-ml-76 max-xl:w-64 max-xl:text-lg max-xl:px-8 cursor-pointer btn_campaign" onclick="modalCyc()">Create Your Campaign</a>
               </div>
           </div>
         </div>
         
         <!-- Start Modal Create Your Campaign -->
-        <div id="modal" class="hidden items-center justify-center h-screen w-screen fixed top-0 bg-black bg-opacity-80" style="z-index: 999;"> <!--Modal Dialog -->
-          <div class="bg-white max-w-xl w-full rounded-md mt-60 ml-96"> <!--Modal Content -->
-               <div class="p-3 flex items-center justify-between border-b border-b-gray-300"> <!--Modal Header -->
-                  <h3 class="font-semibold text-xl">Campaign Form</h3>
-                  <span class="modal-close cursor-pointer" onclick="closeModalcyc()">×</span> <!-- Close Modal -->
-              </div>
-              <div class="p-3 border-b border-b-gray-300"> <!--Modal Body -->
-                <div class="mt-2 sm:col-span-3">
-                  <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
-                  <div>
-                    <input type="text" name="last-name" id="last-name" autocomplete="phone-number" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        <div id="modal_campaign" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative w-full max-w-2xl max-h-full">
+              <!-- Modal content -->
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 w-screen -ml-4">
+                  <!-- Modal header -->
+                  <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                      <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                          Campaign Form
+                      </h3>
+                      <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal_campaign">
+                          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                          </svg>
+                          <span class="sr-only" onclick="closeModalcyc()">Close modal</span>
+                      </button>
                   </div>
-                </div>
-                <div class="mt-2 sm:col-span-3">
-                  <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Set Location</label>
-                  <div>
-                    <input type="text" name="last-name" id="last-name" autocomplete="phone-number" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    <button class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-full mt-2" onclick="showmap()">Show Map</button>
+                  <!-- Modal body -->
+                  <div class="p-6 space-y-6">
+                    <div class="mt-2 sm:col-span-3">
+                      <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
+                      <div>
+                        <input type="text" name="last-name" id="last-name" autocomplete="phone-number" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                    <div class="mt-2 sm:col-span-3">
+                      <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Set Location</label>
+                      <div>
+                        <input type="text" name="last-name" id="last-name" autocomplete="phone-number" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <button class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-full mt-2" onclick="showmap()">Show Map</button>
+                      </div>
+                    </div>
+                    <div class="mt-2 sm:col-span-3">
+                      <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Description</label>
+                      <div>
+                        <textarea name="last-name" id="last-name" autocomplete="phone-number" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="mt-2 sm:col-span-3">
-                  <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Description</label>
-                  <div>
-                    <textarea name="last-name" id="last-name" autocomplete="phone-number" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="p-3 flex items-center justify-end"> <!--Modal Footer -->
-                  <div>
-                    <button class="modal-close text-sm text-gray-400 border rounded-md px-4 py-2" onclick="closeModalcyc()">Close</button> <!-- Close Modal -->
-                    <button class="text-sm text-white bg-blue-500 rounded-md px-4 py-2">Create Campaign</button>
+                  <!-- Modal footer -->
+                  <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600 justify-end">
+                    <button data-modal-hide="modal_campaign" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600" onclick="closeModalcyc()">Close</button>
+                    <button data-modal-hide="modal_campaign" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="closeModalcyc()">Create</button>
                   </div>
               </div>
           </div>
-      </div>
+      </div>        
 
       <!--modal map-->
-      <div id="modal_map" style="z-index: 1000;" class="hidden items-center justify-center h-screen w-screen fixed top-0 bg-black bg-opacity-80"> <!--Modal Dialog -->
-        <div class="bg-white max-w-xl w-full rounded-md mt-32 ml-96"> <!--Modal Content -->
-             <div class="p-3 flex items-center justify-between border-b border-b-gray-300"> <!--Modal Header -->
-                <h3 class="font-semibold text-xl">Set Location</h3>
-                <span class="modal-close cursor-pointer" onclick="closeModalmap()">×</span> <!-- Close Modal -->
-            </div>
-            <div class="p-3 border-b border-b-gray-300"> <!--Modal Body -->
-              <div id="map" class="h-96"></div>
-            </div>
-            <div class="p-3 flex items-center justify-end"> <!--Modal Footer -->
-                <div>
-                  <button class="modal-close text-sm text-gray-400 border rounded-md px-4 py-2" onclick="closeModalmap()">Close</button> <!-- Close Modal -->
-                  <button class="text-sm text-white bg-blue-500 rounded-md px-4 py-2">OK</button>
+      <div id="modal_map" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 w-screen -ml-4">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Set Location
+                    </h3>
+                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal_map">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                        </svg>
+                        <span class="sr-only" onclick="closeModalmap()">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                  <div id="map" class="h-96"></div>
+                  <p class="text-sm">“We are currently reaching our concurrent petition count limits”</p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600 justify-end">
+                    <button data-modal-hide="modal_map" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600" onclick="closeModalmap()">Close</button>
+                    <button data-modal-hide="modal_map" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="closeModalmap()" disabled>Set Location</button>
                 </div>
             </div>
         </div>
     </div>
+
+      
       <!--end modal map-->
         <!-- End Modal Create Your Campaign -->
 
@@ -1081,23 +1106,33 @@
         dots[slideIndex - 1].className += " bg-yellow-400";
         setTimeout(showSlides, 3000); // Change image every 2 seconds
       }
-
-      function modalCyc(){document.getElementById('modal').style.display='block'}
-      function closeModalcyc(){document.getElementById('modal').style.display='none'}
-      function closeModalmap(){document.getElementById('modal_map').style.display='none'}
-      function initMap() {
-            // Create a map centered at a specific location
-            const map = new google.maps.Map(document.getElementById("map"), {
-                center: { lat: 40.7128, lng: -74.0060 }, // Replace with your desired coordinates
-                zoom: 12,
-            });
-            console.log(map,'map');
-        }
-        function showmap(){
+      function modalCyc(){
+        document.getElementById('modal_campaign').style.display='block'
+        document.querySelector("body").style.overflowY = "hidden";
+      }
+      function closeModalcyc(){
+        document.getElementById('modal_campaign').style.display='none'
+        document.querySelector("body").style.overflowY = "auto"; 
+      }
+      function closeModalmap(){
+        document.getElementById('modal_map').style.display='none'
+      }
+      let map,marker,clickMapListener;
+      function showmap(){
           document.getElementById('modal_map').style.display='block'
-          initMap()        
-          google.maps.event.trigger(document.getElementById("map"), "resize");
-          console.log('object');
+          map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -7.634478070417677, lng: 111.305374696875 },
+            zoom: 5,
+          })
+
+          clickMapListener=map.addListener('click', function(data) {
+            marker = new google.maps.Marker({
+                position : data.latLng,
+                animation: google.maps.Animation.DROP,
+                map:map
+            })
+          })
+          // google.maps.event.trigger(document.getElementById("map"), "resize");
       }
     </script>
   </body>
