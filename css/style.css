@@ -56,12 +56,12 @@
 .cimg_toa{
   --x: 20px;
   --y: 10px;
-  transform:  perspective(1000px) rotateY(var(--_a,40deg));
+  transform:  perspective(1000px) rotateY(var(--_a,5deg));
   margin-top:18.75rem;
   margin-left:-1.875rem;
   animation-name: animate_toa;
   animation-iteration-count: infinite;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 @keyframes animate_toa{
   0%{
@@ -69,79 +69,79 @@
   --_c: calc(100% - var(--y));
   }
   5%{
-    --_a: 3deg;
+    --_a: 2deg;
   --_c: calc(100% - var(--y));
   }
   10%{
-    --_a: 6deg;
+    --_a: 4deg;
   --_c: calc(100% - var(--y));
   }
   15%{
-    --_a: 9deg;
-  --_c: calc(100% - var(--y));
-  }
-  20%{
-    --_a: 12deg;
-  --_c: calc(100% - var(--y));
-  }
-  25%{
-    --_a: 15deg;
-  --_c: calc(100% - var(--y));
-  }
-  30%{
-    --_a: 18deg;
-  --_c: calc(100% - var(--y));
-  }
-  35%{
-    --_a: 21deg;
-  --_c: calc(100% - var(--y));
-  }
-  40%{
-    --_a: 24deg;
-  --_c: calc(100% - var(--y));
-  }
-  45%{
-    --_a: 27deg;
-  --_c: calc(100% - var(--y));
-  }
-  50%{
-    --_a: 30deg;
-  --_c: calc(100% - var(--y));
-  }
-  55%{
-    --_a: 27deg;
-  --_c: calc(100% - var(--y));
-  }
-  60%{
-    --_a: 24deg;
-  --_c: calc(100% - var(--y));
-  }
-  65%{
-    --_a: 21deg;
-  --_c: calc(100% - var(--y));
-  }
-  70%{
-    --_a: 18deg;
-  --_c: calc(100% - var(--y));
-  }
-  75%{
-    --_a: 15deg;
-  --_c: calc(100% - var(--y));
-  }
-  80%{
-    --_a: 12deg;
-  --_c: calc(100% - var(--y));
-  }
-  85%{
-    --_a: 9deg;
-  --_c: calc(100% - var(--y));
-  }
-  90%{
     --_a: 6deg;
   --_c: calc(100% - var(--y));
   }
+  20%{
+    --_a: 8deg;
+  --_c: calc(100% - var(--y));
+  }
+  25%{
+    --_a: 10deg;
+  --_c: calc(100% - var(--y));
+  }
+  30%{
+    --_a: 12deg;
+  --_c: calc(100% - var(--y));
+  }
+  35%{
+    --_a: 14deg;
+  --_c: calc(100% - var(--y));
+  }
+  40%{
+    --_a: 16deg;
+  --_c: calc(100% - var(--y));
+  }
+  45%{
+    --_a: 18deg;
+  --_c: calc(100% - var(--y));
+  }
+  50%{
+    --_a: 20deg;
+  --_c: calc(100% - var(--y));
+  }
+  55%{
+    --_a: 18deg;
+  --_c: calc(100% - var(--y));
+  }
+  60%{
+    --_a: 16deg;
+  --_c: calc(100% - var(--y));
+  }
+  65%{
+    --_a: 14deg;
+  --_c: calc(100% - var(--y));
+  }
+  70%{
+    --_a: 12deg;
+  --_c: calc(100% - var(--y));
+  }
+  75%{
+    --_a: 10deg;
+  --_c: calc(100% - var(--y));
+  }
+  80%{
+    --_a: 8deg;
+  --_c: calc(100% - var(--y));
+  }
+  85%{
+    --_a: 6deg;
+  --_c: calc(100% - var(--y));
+  }
+  90%{
+    --_a: 4deg;
+  --_c: calc(100% - var(--y));
+  }
   95%{
-    --_a: 3deg;
+    --_a: 2deg;
   --_c: calc(100% - var(--y));
   }
   100%{
