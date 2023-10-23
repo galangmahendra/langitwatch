@@ -1,113 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
-    rel="stylesheet"
-  />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Langit Watch Newest</title>
-    <!-- Icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css"
-    />
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/d5f00ae8f2.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu9-9wDg-qNZJ1pyhIMzF306E6roCoKMw"></script>
-    <!-- Swipper CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          container: {
-            padding: {
-              DEFAULT: "15px",
-            },
-          },
-          screens: {
-            sm: "300px",
-            md: "768px",
-            lg: "960px",
-            xl: "1330px",
-          },
-          extend: {
-            colors: {
-              primary: "#242e2b",
-              secondary: "#808080",
-              accent: {
-                DEFAULT: "#1cbccf",
-                secondary: "#18abbc",
-                tertiary: "#90c6cd",
-              },
-              grey: "#e8f0f1",
-            },
-            fontFamily: {
-              primary: "Poppins",
-            },
-            boxShadow: {
-              custom1: "0px 2px 40px 0px rgba(8, 70, 78, 0.08)",
-              custom2: "0px 0px 30px 0px rgba(8, 73, 81, 0.06)",
-            },
-            backgroundImage: {
-              hero: "url()",
-              gresik: "url('img/image-gresik.png')",
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Langit Watch Newest</title>
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css" />
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d5f00ae8f2.js" crossorigin="anonymous"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu9-9wDg-qNZJ1pyhIMzF306E6roCoKMw"></script>
+  <!-- Swipper CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          padding: {
+            DEFAULT: "15px",
           },
         },
-      };
-    </script>
-  </head>
+        screens: {
+          sm: "300px",
+          md: "768px",
+          lg: "960px",
+          xl: "1330px",
+        },
+        extend: {
+          colors: {
+            primary: "#242e2b",
+            secondary: "#808080",
+            accent: {
+              DEFAULT: "#1cbccf",
+              secondary: "#18abbc",
+              tertiary: "#90c6cd",
+            },
+            grey: "#e8f0f1",
+          },
+          fontFamily: {
+            primary: "Poppins",
+          },
+          boxShadow: {
+            custom1: "0px 2px 40px 0px rgba(8, 70, 78, 0.08)",
+            custom2: "0px 0px 30px 0px rgba(8, 73, 81, 0.06)",
+          },
+          backgroundImage: {
+            hero: "url()",
+            gresik: "url('img/image-gresik.png')",
+          },
+        },
+      },
+    };
+  </script>
+</head>
 
-  <body class="overflow-x-hidden">
-    <div class="w-full mx-auto">
-      <!-- Start Header -->
-      <header class="py-8 lg:pt-4 lg:pb-6 bg-white">
-        <div
-          class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0"
-        >
-          <div class="flex justify-center items-center lg:justify-normal">
-            <a href="#">
-              <img class="max-w-[180px]" src="img/langitwatch.png" alt="" />
-            </a>
-          </div>
-
-          <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
-            <div
-              class="flex justify-center items-center gap-x-2 lg:justify-normal text-xl lg:text-2xl"
-            >
-              Report a Location
-            </div>
-            <button
-              class="btn btn-sm btn-outline w-[150px] lg:w-auto mx-auto lg:mx-0"
-              onClick="document.getElementById('funding').scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });"
-            >
-              Support
-            </button>
-          </div>
+<body class="overflow-x-hidden">
+  <div class="w-full mx-auto">
+    <!-- Start Header -->
+    <header class="py-8 lg:pt-4 lg:pb-6 bg-white">
+      <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
+        <div class="flex justify-center items-center lg:justify-normal">
+          <a href="#">
+            <img class="max-w-[180px]" src="img/langitwatch.png" alt="" />
+          </a>
         </div>
-      </header>
 
-      <!-- End Header-->
+        <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+          <div class="flex justify-center items-center gap-x-2 lg:justify-normal text-xl lg:text-2xl">
+            Report a Location
+          </div>
+          <button class="btn btn-sm btn-outline w-[150px] lg:w-auto mx-auto lg:mx-0"
+            onClick="document.getElementById('funding').scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });">
+            Support
+          </button>
+        </div>
+      </div>
+    </header>
 
-      <section
-        class="hero bg-cover bg-center mobi_mobile overflow-hidden py-12 xl:pt-12 xl:pb-0"
-        style="
+    <!-- End Header-->
+
+    <section class="hero bg-cover bg-center mobi_mobile overflow-hidden py-12 xl:pt-12 xl:pb-0" style="
           background-image: linear-gradient(
               to right,
               rgba(0, 0, 0, 1) 20%,
@@ -116,92 +98,62 @@
               rgba(254, 246, 246, 0) 100%
             ),
             url(img/mobiaircar.png);
-        "
-      >
-        <div class="container mx-auto h-screen">
-          <div
-            class="flex flex-col xl:flex-row items-center h-full justify-center xl:justify-normal"
-          >
-            <div
-              class="hero__text xl:w-[55%] text-center xl:text-left text-white"
-            >
-              <h1
-                class="text-[28px] xl:text-[64px] font-semibold xl:mt-20 mb-2"
-              >
-                Together With You!
-              </h1>
-              <h1
-                class="text-[28px] xl:text-[40px] font-semibold xl:mt-5 mb-6 leading-none"
-              >
-                Delivering a Naked-Truth Report on Ambient Air Pollution in
-                Indonesia
-              </h1>
-              <p class="mb-[30px] xl:max-w-xl text-center xl:text-left">
-                Using the USEPA Standard Mobile-AAQMS, we aim to provide better
-                insight reports to help local policymakers in Indonesia create
-                eco-centric policies.
-              </p>
-              <p class="mb-[42px] xl:max-w-xl text-center xl:text-left">
-                Using the USEPA Standard Mobile-AAQMS, we aim to provide better
-                insight reports to help local policymakers in Indonesia create
-                eco-centric policies.
-              </p>
-              <button
-                class="btn btn-lg btn-outline mx-auto xl:mx-0"
-                data-modal-target="modal_hero"
-                data-modal-toggle="modal_hero"
-              >
-                Read More
-              </button>
-            </div>
+        ">
+      <div class="container mx-auto h-screen">
+        <div class="flex flex-col xl:flex-row items-center h-full justify-center xl:justify-normal">
+          <div class="hero__text xl:w-[55%] text-center xl:text-left text-white">
+            <h1 class="text-[28px] xl:text-[64px] font-semibold xl:mt-20 mb-2">
+              Together With You!
+            </h1>
+            <h1 class="text-[28px] xl:text-[40px] font-semibold xl:mt-5 mb-6 leading-none">
+              Delivering a Naked-Truth Report on Ambient Air Pollution in
+              Indonesia
+            </h1>
+            <p class="mb-[30px] xl:max-w-xl text-center xl:text-left">
+              Using the USEPA Standard Mobile-AAQMS, we aim to provide better
+              insight reports to help local policymakers in Indonesia create
+              eco-centric policies.
+            </p>
+            <p class="mb-[42px] xl:max-w-xl text-center xl:text-left">
+              Using the USEPA Standard Mobile-AAQMS, we aim to provide better
+              insight reports to help local policymakers in Indonesia create
+              eco-centric policies.
+            </p>
+            <button class="btn btn-lg btn-outline mx-auto xl:mx-0" data-modal-target="modal_hero"
+              data-modal-toggle="modal_hero">
+              Read More
+            </button>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Start Modal Hero -->
+    <!-- Start Modal Hero -->
 
-      <div
-        id="modal_hero"
-        tabindex="-1"
-        aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-      >
-        <div class="relative w-full max-w-2xl max-h-full">
-          <!-- Modal content -->
-          <div class="relative bg-white rounded-lg shadow dark:bg-white">
-            <!-- Modal header -->
-            <div
-              class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
-            >
-              <h3 class="text-xl font-semibold text-white dark:text-gray-900">
-                Read More
-              </h3>
-              <button
-                type="button"
-                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                data-modal-hide="modal_hero"
-              >
-                <svg
-                  class="w-3 h-3"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                  />
-                </svg>
-                <span class="sr-only">Close</span>
-              </button>
-            </div>
-            <!-- Modal body -->
-            <div class="p-6 space-y-6">
-              <!-- <div class="mt-2 sm:col-span-3">
+    <div id="modal_hero" tabindex="-1" aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-white">
+          <!-- Modal header -->
+          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+            <h3 class="text-xl font-semibold text-white dark:text-gray-900">
+              Read More
+            </h3>
+            <button type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-hide="modal_hero">
+              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+              </svg>
+              <span class="sr-only">Close</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6 space-y-6">
+            <!-- <div class="mt-2 sm:col-span-3">
                 <label
                   for="phone_number"
                   class="block text-sm font-medium leading-6 text-gray-900"
@@ -217,7 +169,7 @@
                   />
                 </div>
               </div> -->
-              <!-- <div class="mt-2 sm:col-span-3">
+            <!-- <div class="mt-2 sm:col-span-3">
                 <label
                   for="location"
                   class="block text-sm font-medium leading-6 text-gray-900"
@@ -241,398 +193,280 @@
                   </button>
                 </div>
               </div> -->
-              <div class="mt-2 sm:col-span-3">
-                <label
-                  for="description"
-                  class="block text-sm font-medium leading-6 text-gray-900"
-                  >Description</label
-                >
-                <div>
-                  <textarea
-                    name="description"
-                    id="description"
-                    autocomplete="phone-number"
-                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  ></textarea>
-                </div>
+            <div class="mt-2 sm:col-span-3">
+              <label for="description" class="block text-sm font-medium leading-6 text-gray-900">Description</label>
+              <div>
+                <textarea name="description" id="description" autocomplete="phone-number"
+                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
               </div>
             </div>
-            <!-- Modal footer -->
-            <div
-              class="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
-            >
-              <button
-                data-modal-hide="modal_hero"
-                type="button"
-                class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
-              >
-                Close
-              </button>
-              <button
-                data-modal-hide="modal_hero"
-                type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Read More
-              </button>
+          </div>
+          <!-- Modal footer -->
+          <div
+            class="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+            <button data-modal-hide="modal_hero" type="button"
+              class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
+              Close
+            </button>
+            <button data-modal-hide="modal_hero" type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Modal Hero -->
+
+    <!-- End hero section -->
+
+    <section
+      class="min-h-[3500px] min-[1200px]:min-h-0 min-[1200px]:aspect-square w-full bg-red-500 grid grid-cols-1 grid-rows-4 min-[1200px]:grid-cols-2 min-[1200px]:grid-rows-2">
+      <!-- Grid Ongoing Campaign -->
+      <div class="bg-white flex flex-col py-14 pl-5 pr-5 sm:pl-[20px] sm:pr-3">
+        <div class="flex mb-10 items-start text-black xl:text-3xl text-3xl text-left font-bold flex-row gap-3">
+          <span> Ongoing Campaign: Rusa Bawean </span>
+          <div class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0">
+            <div class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                <path
+                  d="M1.94631 9.31555C1.42377 9.14137 1.41965 8.86034 1.95706 8.6812L21.0433 2.31913C21.5717 2.14297 21.8748 2.43878 21.7268 2.95706L16.2736 22.0433C16.1226 22.5718 15.8179 22.5901 15.5946 22.0877L12.0002 14.0002L18.0002 6.00017L10.0002 12.0002L1.94631 9.31555Z"
+                  fill="rgba(255,255,255,1)"></path>
+              </svg>
             </div>
+          </div>
+        </div>
+
+        <div class="flex min-h-[80px] gap-5 items-start">
+          <div class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0">
+            <div class="w-6 h-6 bg-green-600 rounded-full flex-shrink-0"></div>
+            <div class="min-h-[60px] w-2.5 bg-green-600 flex-1">
+              <div class="w-full h-1 bg-green-600 -translate-y-1"></div>
+            </div>
+          </div>
+          <div class="">
+            <span class="text-black text-2xl text-center font-semibold">
+              Petition Reach it’s Mark (<a href="#" class="text-blue-700 underline">309</a>)
+            </span>
+          </div>
+        </div>
+
+        <div class="flex min-h-[80px] gap-5 items-start">
+          <div class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0">
+            <div class="w-8 h-8 bg-green-600 rounded-full flex-shrink-0"></div>
+            <div class="min-h-[60px] w-2.5 bg-green-600 flex-1">
+              <div class="w-full h-1 bg-green-600 -translate-y-1"></div>
+            </div>
+          </div>
+          <div class="flex gap-1">
+            <span class="text-black text-2xl text-left font-semibold">
+              Operational Costs & Efforts Breakdown
+            </span>
+          </div>
+        </div>
+
+        <div class="flex min-h-[80px] gap-5 items-start">
+          <div class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0">
+            <div class="w-10 h-10 bg-green-600 rounded-full flex-shrink-0"></div>
+            <div class="min-h-[60px] w-2.5 bg-gray-300 flex-1">
+              <div class="w-full h-1 bg-gray-300"></div>
+            </div>
+          </div>
+          <div class="">
+            <span class="text-black text-2xl text-center font-semibold">
+              Placement Cost Crowd Funding
+            </span>
+          </div>
+        </div>
+        <div class="flex min-h-[80px] gap-5 items-start">
+          <div class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0">
+            <div class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0"></div>
+            <div class="min-h-[60px] w-2.5 bg-gray-300 flex-1">
+              <div class="w-full h-1 bg-gray-300 -translate-y-1"></div>
+            </div>
+          </div>
+          <div class="">
+            <span class="text-gray-500 text-2xl text-center font-semibold">
+              Analyzing Ambient Air Quality
+            </span>
+          </div>
+        </div>
+        <div class="flex min-h-[80px] gap-5 items-start">
+          <div class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0">
+            <div class="w-8 h-8 bg-gray-300 rounded-full flex-shrink-0"></div>
+            <div class="min-h-[60px] w-2.5 bg-gray-300 flex-1">
+              <div class="w-full h-1 bg-gray-300 -translate-y-1"></div>
+            </div>
+          </div>
+          <div class="">
+            <span class="text-gray-500 text-2xl text-center font-semibold">
+              Report Delivered
+            </span>
+          </div>
+        </div>
+
+        <div class="flex min-h-[80px] gap-2 items-start">
+          <div class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0">
+            <div class="w-6 h-6 bg-gray-300 rounded-full flex-shrink-0"></div>
+          </div>
+          <div class="">
+            <span class="text-gray-500 text-2xl text-center font-semibold">
+              Tree Planting (<a href="#" class="text-blue-700 underline">LindungiHutan</a>)
+            </span>
           </div>
         </div>
       </div>
 
-      <!-- End Modal Hero -->
+      <!-- End Grid Ongoing Campaign -->
 
-      <!-- End hero section -->
-
-      <section
-        class="min-h-[3500px] min-[1200px]:min-h-0 min-[1200px]:aspect-square w-full bg-red-500 grid grid-cols-1 grid-rows-4 min-[1200px]:grid-cols-2 min-[1200px]:grid-rows-2"
-      >
-        <!-- Grid Ongoing Campaign -->
+      <!-- Grid Gresik -->
+      <div id="funding" class="bg-[url('/img/image-gresik.png')] bg-cover flex flex-row-reverse h-full lg:h-full">
         <div
-          class="bg-white flex flex-col py-14 pl-5 pr-5 sm:pl-[20px] sm:pr-3"
-        >
-          <div
-            class="flex mb-10 items-start text-black xl:text-3xl text-3xl text-left font-bold flex-row gap-3"
-          >
-            <span> Ongoing Campaign: Rusa Bawean </span>
-            <div
-              class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
-            >
-              <div
-                class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                >
-                  <path
-                    d="M1.94631 9.31555C1.42377 9.14137 1.41965 8.86034 1.95706 8.6812L21.0433 2.31913C21.5717 2.14297 21.8748 2.43878 21.7268 2.95706L16.2736 22.0433C16.1226 22.5718 15.8179 22.5901 15.5946 22.0877L12.0002 14.0002L18.0002 6.00017L10.0002 12.0002L1.94631 9.31555Z"
-                    fill="rgba(255,255,255,1)"
-                  ></path>
+          class="text-white w-full bg-gradient-to-l from-[#009ee6] from-25% xl:pr-20 lg:pr-10 md:pr-10 flex flex-col items-end gap-8 xl:py-[45px] lg:py-[45px] md:py-[45px] sm:py-[45px] sm:pr-2">
+          <div class="flex flex-col">
+            <div class="flex mb-10 items-start text-white text-3xl text-right font-bold">
+              <span> Placement Cost Crowd Funding </span>
+            </div>
+
+            <div class="flex flex-col justify-end items-end gap-2">
+              <div class="max-w-[300px] w-full h-4 rounded-xl bg-white">
+                <div class="w-[230px] h-full rounded-xl bg-blue-800"></div>
+              </div>
+              <span class="w-full text-end text-lg font-normal">
+                Rp 8.000.000 / Rp. 11.900.000
+              </span>
+            </div>
+          </div>
+          <div class="text-lg font-bold">Cost & Efforts Breakdown</div>
+          <div class="leading-none">
+            <div class="text-lg font-bold leading-none text-right">
+              Transportation
+            </div>
+            <p class="w-full text-right text-lg font-normal leading-none">
+              Approx. 110km
+            </p>
+            <p class="w-full text-right text-lg font-normal leading-none">
+              Rp500.000 Diesel Fossil Fuel
+            </p>
+          </div>
+          <div class="leading-none">
+            <div class="text-lg font-bold leading-none text-right">
+              2 Local Manpower
+            </div>
+            <p class="w-full text-right text-lg font-normal leading-none">
+              Driver & Guard
+            </p>
+            <p class="w-full text-right text-lg font-normal leading-none">
+              (Low Range Mand-Days Rate)
+            </p>
+            <p class="w-full text-right text-lg font-normal leading-none">
+              Rp200.000 X 14 Days X 2 Manpower = Rp5.600.000
+            </p>
+          </div>
+          <div class="leading-none">
+            <div class="text-lg font-bold leading-none text-right">
+              14 Days Remote Site Electricity
+            </div>
+            <p class="w-full text-right text-lg font-normal leading-none">
+              Rp1.000.000
+            </p>
+          </div>
+          <div class="leading-none">
+            <div class="text-lg font-bold leading-none text-right">
+              Permit & Unintended Cost
+              <span class="font-normal">(if needed)</span>
+            </div>
+            <p class="w-full text-right text-lg font-normal leading-none">
+              +/- Rp1.500.000
+            </p>
+          </div>
+          <div class="leading-none">
+            <div class="text-lg font-bold leading-none text-right">
+              110 Trees to be planted
+            </div>
+            <p class="w-full text-right text-lg font-normal leading-none">
+              Rp30.000 X 110 = Rp3.300.000
+            </p>
+          </div>
+          <div>
+            <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
+              class="btn btn-sm btn-outline mx-auto xl:mx-0 font-bold text-lg xl:text-lg w-30">
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- End Grid Gresik -->
+      <div style="background: linear-gradient(45deg, red, #ffd964)">
+        <div class="flex">
+          <div class="flex-1" style="padding: 1.875rem">
+            <a class="btn_cross">+</a>
+          </div>
+          <div class="flex-1 container_toa">
+            <div class="min-[640]:w-96 max-sm:ml-1 box_toa">
+              <img src="/img/campaign.png" alt=""
+                class="max-xl:mt-72 max-xl:-ml-2 w-full md:w-full cimg_toa sm:ml-[2rem]" />
+            </div>
+          </div>
+          <div class="flex-1 container_cyc">
+            <!-- <a class="max-sm:mt-80 lg:-ml-76 md:mt-[38rem] max-xl:w-64 max-xl:text-lg max-xl:px-8 cursor-pointer btn_campaign sm:text-center sm:-ml-[18rem]" onclick="modalCyc()">Create Your Campaign</a> -->
+            <button data-modal-target="modal_campaign" data-modal-toggle="modal_campaign"
+              class="block bg-yellow-400 focus:ring-4 focus:outline-none text-sm text-center max-sm:mt-80 lg:-ml-76 md:mt-[38rem] max-xl:w-64 max-xl:text-lg max-xl:px-8 cursor-pointer btn_campaign sm:text-center sm:-ml-[18.5rem]"
+              type="button">
+              Create Your Campaign
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start Modal Create Your Campaign -->
+      <div id="modal_campaign" tabindex="-1" aria-hidden="true"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Campaign Form
+              </h3>
+              <button type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="modal_campaign">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                 </svg>
-              </div>
+                <span class="sr-only">Close</span>
+              </button>
             </div>
-          </div>
-
-          <div class="flex min-h-[80px] gap-5 items-start">
-            <div
-              class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
-            >
-              <div
-                class="w-6 h-6 bg-green-600 rounded-full flex-shrink-0"
-              ></div>
-              <div class="min-h-[60px] w-2.5 bg-green-600 flex-1">
-                <div class="w-full h-1 bg-green-600 -translate-y-1"></div>
-              </div>
-            </div>
-            <div class="">
-              <span class="text-black text-2xl text-center font-semibold">
-                Petition Reach it’s Mark (<a
-                  href="#"
-                  class="text-blue-700 underline"
-                  >309</a
-                >)
-              </span>
-            </div>
-          </div>
-
-          <div class="flex min-h-[80px] gap-5 items-start">
-            <div
-              class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
-            >
-              <div
-                class="w-8 h-8 bg-green-600 rounded-full flex-shrink-0"
-              ></div>
-              <div class="min-h-[60px] w-2.5 bg-green-600 flex-1">
-                <div class="w-full h-1 bg-green-600 -translate-y-1"></div>
-              </div>
-            </div>
-            <div class="flex gap-1">
-              <span class="text-black text-2xl text-left font-semibold">
-                Operational Costs & Efforts Breakdown
-              </span>
-            </div>
-          </div>
-
-          <div class="flex min-h-[80px] gap-5 items-start">
-            <div
-              class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
-            >
-              <div
-                class="w-10 h-10 bg-green-600 rounded-full flex-shrink-0"
-              ></div>
-              <div class="min-h-[60px] w-2.5 bg-gray-300 flex-1">
-                <div class="w-full h-1 bg-gray-300"></div>
-              </div>
-            </div>
-            <div class="">
-              <span class="text-black text-2xl text-center font-semibold">
-                Placement Cost Crowd Funding
-              </span>
-            </div>
-          </div>
-          <div class="flex min-h-[80px] gap-5 items-start">
-            <div
-              class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
-            >
-              <div
-                class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0"
-              ></div>
-              <div class="min-h-[60px] w-2.5 bg-gray-300 flex-1">
-                <div class="w-full h-1 bg-gray-300 -translate-y-1"></div>
-              </div>
-            </div>
-            <div class="">
-              <span class="text-gray-500 text-2xl text-center font-semibold">
-                Analyzing Ambient Air Quality
-              </span>
-            </div>
-          </div>
-          <div class="flex min-h-[80px] gap-5 items-start">
-            <div
-              class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
-            >
-              <div class="w-8 h-8 bg-gray-300 rounded-full flex-shrink-0"></div>
-              <div class="min-h-[60px] w-2.5 bg-gray-300 flex-1">
-                <div class="w-full h-1 bg-gray-300 -translate-y-1"></div>
-              </div>
-            </div>
-            <div class="">
-              <span class="text-gray-500 text-2xl text-center font-semibold">
-                Report Delivered
-              </span>
-            </div>
-          </div>
-
-          <div class="flex min-h-[80px] gap-2 items-start">
-            <div
-              class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
-            >
-              <div class="w-6 h-6 bg-gray-300 rounded-full flex-shrink-0"></div>
-            </div>
-            <div class="">
-              <span class="text-gray-500 text-2xl text-center font-semibold">
-                Tree Planting (<a href="#" class="text-blue-700 underline"
-                  >LindungiHutan</a
-                >)
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- End Grid Ongoing Campaign -->
-
-        <!-- Grid Gresik -->
-        <div
-          id="funding"
-          class="bg-[url('/img/image-gresik.png')] bg-cover flex flex-row-reverse h-full lg:h-full"
-        >
-          <div
-            class="text-white w-full bg-gradient-to-l from-[#009ee6] from-25% xl:pr-20 lg:pr-10 md:pr-10 flex flex-col items-end gap-8 xl:py-[45px] lg:py-[45px] md:py-[45px] sm:py-[45px] sm:pr-2"
-          >
-            <div class="flex flex-col">
-              <div
-                class="flex mb-10 items-start text-white text-3xl text-right font-bold"
-              >
-                <span> Placement Cost Crowd Funding </span>
-              </div>
-
-              <div class="flex flex-col justify-end items-end gap-2">
-                <div class="max-w-[300px] w-full h-4 rounded-xl bg-white">
-                  <div class="w-[230px] h-full rounded-xl bg-blue-800"></div>
+            <!-- Modal body -->
+            <form id="campaign_form" method="POST">
+              <div class="p-6 space-y-6">
+                <div class="mt-2 sm:col-span-3">
+                  <label for="name" class="block text-sm font-medium leading-6 text-white">Campaign Name</label>
+                  <div>
+                    <input required type="text" name="name" id="campaign_name" autocomplete="phone-number"
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                  </div>
                 </div>
-                <span class="w-full text-end text-lg font-normal">
-                  Rp 8.000.000 / Rp. 11.900.000
-                </span>
-              </div>
-            </div>
-            <div class="text-lg font-bold">Cost & Efforts Breakdown</div>
-            <div class="leading-none">
-              <div class="text-lg font-bold leading-none text-right">
-                Transportation
-              </div>
-              <p class="w-full text-right text-lg font-normal leading-none">
-                Approx. 110km
-              </p>
-              <p class="w-full text-right text-lg font-normal leading-none">
-                Rp500.000 Diesel Fossil Fuel
-              </p>
-            </div>
-            <div class="leading-none">
-              <div class="text-lg font-bold leading-none text-right">
-                2 Local Manpower
-              </div>
-              <p class="w-full text-right text-lg font-normal leading-none">
-                Driver & Guard
-              </p>
-              <p class="w-full text-right text-lg font-normal leading-none">
-                (Low Range Mand-Days Rate)
-              </p>
-              <p class="w-full text-right text-lg font-normal leading-none">
-                Rp200.000 X 14 Days X 2 Manpower = Rp5.600.000
-              </p>
-            </div>
-            <div class="leading-none">
-              <div class="text-lg font-bold leading-none text-right">
-                14 Days Remote Site Electricity
-              </div>
-              <p class="w-full text-right text-lg font-normal leading-none">
-                Rp1.000.000
-              </p>
-            </div>
-            <div class="leading-none">
-              <div class="text-lg font-bold leading-none text-right">
-                Permit & Unintended Cost
-                <span class="font-normal">(if needed)</span>
-              </div>
-              <p class="w-full text-right text-lg font-normal leading-none">
-                +/- Rp1.500.000
-              </p>
-            </div>
-            <div class="leading-none">
-              <div class="text-lg font-bold leading-none text-right">
-                110 Trees to be planted
-              </div>
-              <p class="w-full text-right text-lg font-normal leading-none">
-                Rp30.000 X 110 = Rp3.300.000
-              </p>
-            </div>
-            <div>
-              <button
-                data-modal-target="defaultModal"
-                data-modal-toggle="defaultModal"
-                class="btn btn-sm btn-outline mx-auto xl:mx-0 font-bold text-lg xl:text-lg w-30"
-              >
-                Donate Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- End Grid Gresik -->
-        <div style="background: linear-gradient(45deg, red, #ffd964)">
-          <div class="flex">
-            <div class="flex-1" style="padding: 1.875rem">
-              <a class="btn_cross">+</a>
-            </div>
-            <div class="flex-1 container_toa">
-              <div class="min-[640]:w-96 max-sm:ml-1 box_toa">
-                <img
-                  src="/img/campaign.png"
-                  alt=""
-                  class="max-xl:mt-72 max-xl:-ml-2 w-full md:w-full cimg_toa sm:ml-[2rem]"
-                />
-              </div>
-            </div>
-            <div class="flex-1 container_cyc">
-              <!-- <a class="max-sm:mt-80 lg:-ml-76 md:mt-[38rem] max-xl:w-64 max-xl:text-lg max-xl:px-8 cursor-pointer btn_campaign sm:text-center sm:-ml-[18rem]" onclick="modalCyc()">Create Your Campaign</a> -->
-              <button
-                data-modal-target="modal_campaign"
-                data-modal-toggle="modal_campaign"
-                class="block bg-yellow-400 focus:ring-4 focus:outline-none text-sm text-center max-sm:mt-80 lg:-ml-76 md:mt-[38rem] max-xl:w-64 max-xl:text-lg max-xl:px-8 cursor-pointer btn_campaign sm:text-center sm:-ml-[18.5rem]"
-                type="button"
-              >
-                Create Your Campaign
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Start Modal Create Your Campaign -->
-        <div
-          id="modal_campaign"
-          tabindex="-1"
-          aria-hidden="true"
-          class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-        >
-          <div class="relative w-full max-w-2xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-              <!-- Modal header -->
-              <div
-                class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
-              >
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                  Campaign Form
-                </h3>
-                <button
-                  type="button"
-                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                  data-modal-hide="modal_campaign"
-                >
-                  <svg
-                    class="w-3 h-3"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                    />
-                  </svg>
-                  <span class="sr-only">Close</span>
-                </button>
-              </div>
-              <!-- Modal body -->
-              <form id="campaign_form" method="POST">
-                <div class="p-6 space-y-6">
-                  <div class="mt-2 sm:col-span-3">
-                    <label
-                      for="name"
-                      class="block text-sm font-medium leading-6 text-white"
-                      >Campaign Name</label
-                    >
-                    <div>
-                      <input
-                        required
-                        type="text"
-                        name="name"
-                        id="campaign_name"
-                        autocomplete="phone-number"
-                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
+                <div class="mt-2 sm:col-span-3">
+                  <label for="phone_number" class="block text-sm font-medium leading-6 text-white">Phone Number</label>
+                  <div>
+                    <input required type="text" name="phone_number" id="phone_number" autocomplete="phone-number"
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                   </div>
-                  <div class="mt-2 sm:col-span-3">
-                    <label
-                      for="phone_number"
-                      class="block text-sm font-medium leading-6 text-white"
-                      >Phone Number</label
-                    >
-                    <div>
-                      <input
-                        required
-                        type="text"
-                        name="phone_number"
-                        id="phone_number"
-                        autocomplete="phone-number"
-                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
+                </div>
+                <div class="mt-2 sm:col-span-3">
+                  <label for="email" class="block text-sm font-medium leading-6 text-white">Email</label>
+                  <div>
+                    <input required type="email" name="email" id="contact_email"
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                   </div>
-                  <div class="mt-2 sm:col-span-3">
-                    <label
-                      for="email"
-                      class="block text-sm font-medium leading-6 text-white"
-                      >Email</label
-                    >
-                    <div>
-                      <input
-                        required
-                        type="email"
-                        name="email"
-                        id="contact_email"
-                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
-                  </div>
-                  <!-- <div class="mt-2 sm:col-span-3">
+                </div>
+                <!-- <div class="mt-2 sm:col-span-3">
                   <label
                     for="location"
                     class="block text-sm font-medium leading-6 text-gray-900"
@@ -656,981 +490,198 @@
                     </button>
                   </div>
                  </div> -->
-                  <div class="mt-2 sm:col-span-3">
-                    <label
-                      for="description"
-                      class="block text-sm font-medium leading-6 text-white"
-                      >Description</label
-                    >
-                    <div>
-                      <textarea
-                        name="description"
-                        id="description"
-                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      ></textarea>
-                    </div>
+                <div class="mt-2 sm:col-span-3">
+                  <label for="description" class="block text-sm font-medium leading-6 text-white">Description</label>
+                  <div>
+                    <textarea name="description" id="description"
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
                   </div>
                 </div>
-                <!-- Modal footer -->
-                <div
-                  class="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
-                >
-                  <button
-                    data-modal-hide="modal_campaign"
-                    type="button"
-                    class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
-                  >
-                    Close
-                  </button>
-                  <button
-                    data-modal-hide="modal_campaign"
-                    type="submit"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                  >
-                    Create Campaign
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- start modal map -->
-        <div
-          id="modal_map"
-          tabindex="-1"
-          aria-hidden="true"
-          class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-        >
-          <div class="relative w-full max-w-2xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-              <!-- Modal header -->
-              <div
-                class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
-              >
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                  Set Your Location
-                </h3>
-                <button
-                  type="button"
-                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                  data-modal-hide="modal_map"
-                >
-                  <svg
-                    class="w-3 h-3"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                    />
-                  </svg>
-                  <span class="sr-only">Close</span>
-                </button>
-              </div>
-              <!-- Modal body -->
-              <div class="p-6 space-y-6">
-                <div id="map" class="h-96"></div>
-                <p class="text-sm">
-                  “We are currently reaching our concurrent petition count
-                  limits”
-                </p>
               </div>
               <!-- Modal footer -->
               <div
-                class="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
-              >
-                <button
-                  data-modal-hide="modal_map"
-                  type="button"
-                  class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
-                >
+                class="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="modal_campaign" type="button"
+                  class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
                   Close
                 </button>
-                <button
-                  data-modal-hide="modal_map"
-                  type="button"
-                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Set Location
+                <button data-modal-hide="modal_campaign" type="submit"
+                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Create Campaign
                 </button>
               </div>
-            </div>
-          </div>
-        </div>
-        <!-- end modal map -->
-        <!-- End modal campaign -->
-        <div
-          class="bg-white flex flex-col py-14 pl-5 pr-5 sm:pl-[20px] sm:pr-3 justify-center"
-        >
-          <div
-            class="flex mb-10 items-start text-black xl:text-3xl text-3xl text-left font-bold flex-row gap-5"
-          >
-            <span> Top Petitions </span>
-            <button
-              class="btn btn-sm btn-outline mx-auto xl:mx-0 text-sm xl:text-lg w-30"
-              data-modal-target="modal_hero"
-              data-modal-toggle="modal_hero"
-            >
-              See More
-            </button>
-          </div>
-
-          <div class="flex min-h-[80px] gap-5 items-start mb-5">
-            <div
-              class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
-            >
-              <div
-                class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                >
-                  <path
-                    d="M1.94631 9.31555C1.42377 9.14137 1.41965 8.86034 1.95706 8.6812L21.0433 2.31913C21.5717 2.14297 21.8748 2.43878 21.7268 2.95706L16.2736 22.0433C16.1226 22.5718 15.8179 22.5901 15.5946 22.0877L12.0002 14.0002L18.0002 6.00017L10.0002 12.0002L1.94631 9.31555Z"
-                    fill="rgba(255,255,255,1)"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="flex gap-1">
-              <span class="text-black text-3xl text-left font-semibold">
-                Jalak Bali II (279 Votes / 12 Days)
-              </span>
-            </div>
-          </div>
-
-          <div class="flex min-h-[80px] gap-5 items-start mb-5">
-            <div
-              class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
-            >
-              <div
-                class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                >
-                  <path
-                    d="M1.94631 9.31555C1.42377 9.14137 1.41965 8.86034 1.95706 8.6812L21.0433 2.31913C21.5717 2.14297 21.8748 2.43878 21.7268 2.95706L16.2736 22.0433C16.1226 22.5718 15.8179 22.5901 15.5946 22.0877L12.0002 14.0002L18.0002 6.00017L10.0002 12.0002L1.94631 9.31555Z"
-                    fill="rgba(255,255,255,1)"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="flex gap-1">
-              <span class="text-black text-3xl text-left font-semibold">
-                Ayam Bekisar (198 Votes / 6 Days)
-              </span>
-            </div>
-          </div>
-
-          <div class="flex min-h-[80px] gap-5 items-start mb-5">
-            <div
-              class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
-            >
-              <div
-                class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                >
-                  <path
-                    d="M1.94631 9.31555C1.42377 9.14137 1.41965 8.86034 1.95706 8.6812L21.0433 2.31913C21.5717 2.14297 21.8748 2.43878 21.7268 2.95706L16.2736 22.0433C16.1226 22.5718 15.8179 22.5901 15.5946 22.0877L12.0002 14.0002L18.0002 6.00017L10.0002 12.0002L1.94631 9.31555Z"
-                    fill="rgba(255,255,255,1)"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="flex gap-1">
-              <span class="text-black text-3xl text-left font-semibold">
-                Sedap Malam (109 Votes / 6 Days)
-              </span>
-            </div>
-          </div>
-
-          <div class="flex min-h-[80px] gap-5 items-start mb-5">
-            <div
-              class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
-            >
-              <div
-                class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                >
-                  <path
-                    d="M1.94631 9.31555C1.42377 9.14137 1.41965 8.86034 1.95706 8.6812L21.0433 2.31913C21.5717 2.14297 21.8748 2.43878 21.7268 2.95706L16.2736 22.0433C16.1226 22.5718 15.8179 22.5901 15.5946 22.0877L12.0002 14.0002L18.0002 6.00017L10.0002 12.0002L1.94631 9.31555Z"
-                    fill="rgba(255,255,255,1)"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="flex gap-1">
-              <span class="text-black text-3xl text-left font-semibold">
-                Sedap Malam (80 Votes / 8 Days)
-              </span>
-            </div>
-          </div>
-
-          <div class="flex min-h-[80px] gap-5 items-start mb-5">
-            <div
-              class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0"
-            >
-              <div
-                class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                >
-                  <path
-                    d="M1.94631 9.31555C1.42377 9.14137 1.41965 8.86034 1.95706 8.6812L21.0433 2.31913C21.5717 2.14297 21.8748 2.43878 21.7268 2.95706L16.2736 22.0433C16.1226 22.5718 15.8179 22.5901 15.5946 22.0877L12.0002 14.0002L18.0002 6.00017L10.0002 12.0002L1.94631 9.31555Z"
-                    fill="rgba(255,255,255,1)"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="flex gap-1">
-              <span class="text-black text-3xl text-left font-semibold">
-                Sedap Malam (20 Votes / 10 Days)
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Start Modal Petitions -->
-      <div
-        id="modal_petition"
-        tabindex="-1"
-        aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-      >
-        <div class="relative w-full max-w-2xl max-h-full">
-          <!-- Modal content -->
-          <div class="relative bg-white rounded-lg shadow dark:bg-white">
-            <!-- Modal header -->
-            <div
-              class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
-            >
-              <h3 class="text-xl font-semibold text-white dark:text-gray-900">
-                See More Petitions
-              </h3>
-              <button
-                type="button"
-                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                data-modal-hide="modal_petition"
-              >
-                <svg
-                  class="w-3 h-3"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                  />
-                </svg>
-                <span class="sr-only">Close</span>
-              </button>
-            </div>
-            <!-- Modal body -->
-            <div class="p-6 space-y-6">
-              <!-- <div class="mt-2 sm:col-span-3">
-                <label
-                  for="phone_number"
-                  class="block text-sm font-medium leading-6 text-gray-900"
-                  >Phone Number</label
-                >
-                <div>
-                  <input
-                    type="text"
-                    name="phone_number"
-                    id="phone_number"
-                    autocomplete="phone-number"
-                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div> -->
-              <!-- <div class="mt-2 sm:col-span-3">
-                <label
-                  for="location"
-                  class="block text-sm font-medium leading-6 text-gray-900"
-                  >Set Location</label
-                >
-                <div>
-                  <input
-                    type="hidden"
-                    name="location"
-                    id="location"
-                    autocomplete="phone-number"
-                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                  <button
-                    class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-full mt-2"
-                    data-modal-target="modal_map"
-                    data-modal-toggle="modal_map"
-                    onclick="showmap()"
-                  >
-                    Show Map
-                  </button>
-                </div>
-              </div> -->
-              <div class="mt-2 sm:col-span-3">
-                <label
-                  for="description"
-                  class="block text-sm font-medium leading-6 text-gray-900"
-                  >Description</label
-                >
-                <div>
-                  <textarea
-                    name="description"
-                    id="description"
-                    autocomplete="phone-number"
-                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-            <!-- Modal footer -->
-            <div
-              class="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
-            >
-              <button
-                data-modal-hide="modal_petition"
-                type="button"
-                class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
-              >
-                Close
-              </button>
-              <button
-                data-modal-hide="modal_petition"
-                type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Read More
-              </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
-
-      <!-- End Modal Petitions -->
-
-      <!-- Section Impact -->
-
-      <section class="relative impact bg-white w-full h-full">
-        <div
-          id="default-carousel"
-          class="relative w-full"
-          data-carousel="slide"
-        >
-          <div
-            class="relative h-[40rem] lg:h-[60rem] md:h-[45rem] sm:h-[40rem] overflow-hidden rounded-lg"
-          >
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="/img/impact1.png"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-              <div
-                class="absolute z-50 top-0 right-0 bottom-0 xl:w-4/5 lg:w-4/5 md:w-4/5 sm:w-full bg-gradient-to-l from-[#cbbade] xl:from-50% lg:from-50% md:from-50% sm:from-100% flex flex-col items-end text-white px-28 py-10 md:px-12 sm:px-2 sm:py-5 sm:px-2 sm:py-5"
-              >
-                <div class="items-end text-right px-2">
-                  <div>
-                    <span
-                      class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-2xl"
-                      >#</span
-                    >
-                    <span class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl"
-                      >Impact</span
-                    >
-                  </div>
-                  <div
-                    class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold mb-9 mt-6"
-                  >
-                    Small Act, Huge Impact
-                  </div>
-                  <div
-                    class="flex flex-col xl:w-[40rem] lg:w-[30rem] md:w-[20rem] sm:w-auto gap-5 items-end text-right xl:text-2xl lg:text-xl md:text-md sm:text-sm"
-                  >
-                    <p>
-                      Langit Watch was first introduced to the public through a
-                      network of large mosques in Greater Malang, the An-Nur
-                      Mosque in Batu City, the Sabilillah Mosque in Malang City,
-                      and the Gadang Mosque (near the border of Malang City and
-                      Regency). The AAQMS mobile used by Langit Watch has been
-                      completed a continuous analysis for one week for each
-                      mosque to determine the type and highest levels of
-                      pollutants around the mosque. While the AAQMS is
-                      analyzing, our Langit Protector also shares information
-                      through an open seminar with everyone Most pollutants are
-                      produced by cars and motorbikes that keep the engine
-                      running even in the parking area. Together with Langit
-                      Watch, the management of the three mosques agreed to make
-                      regulations to turn off motorized vehicles while waiting
-                      in the mosque parking area and its surroundings.
-                    </p>
-                  </div>
-                </div>
-                <span
-                  class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold px-6 py-3 rounded-full bg-[#019845] mt-10 sm:mt-5"
-                >
-                  <a> Read Story & Report </a>
-                </span>
-              </div>
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="img/mobiaircar.png"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-              <div
-                class="absolute z-50 top-0 right-0 bottom-0 xl:w-4/5 lg:w-4/5 md:w-4/5 sm:w-full bg-gradient-to-l from-[#cbbade] xl:from-50% lg:from-50% md:from-50% sm:from-100% flex flex-col items-end text-white px-28 py-10 md:px-12 sm:px-2 sm:py-5 sm:px-1"
-              >
-                <div class="items-end text-right px-2">
-                  <div>
-                    <span
-                      class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-2xl"
-                      >#</span
-                    >
-                    <span class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl"
-                      >Impact</span
-                    >
-                  </div>
-                  <div
-                    class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold mb-9 mt-6"
-                  >
-                    Small Act, Huge Impact
-                  </div>
-                  <div
-                    class="flex flex-col xl:w-[40rem] lg:w-[30rem] md:w-[20rem] sm:w-auto gap-5 items-end text-right xl:text-2xl lg:text-xl md:text-md sm:text-sm"
-                  >
-                    <p>
-                      Langit Watch was first introduced to the public through a
-                      network of large mosques in Greater Malang, the An-Nur
-                      Mosque in Batu City, the Sabilillah Mosque in Malang City,
-                      and the Gadang Mosque (near the border of Malang City and
-                      Regency). The AAQMS mobile used by Langit Watch has been
-                      completed a continuous analysis for one week for each
-                      mosque to determine the type and highest levels of
-                      pollutants around the mosque. While the AAQMS is
-                      analyzing, our Langit Protector also shares information
-                      through an open seminar with everyone Most pollutants are
-                      produced by cars and motorbikes that keep the engine
-                      running even in the parking area. Together with Langit
-                      Watch, the management of the three mosques agreed to make
-                      regulations to turn off motorized vehicles while waiting
-                      in the mosque parking area and its surroundings.
-                    </p>
-                  </div>
-                </div>
-                <span
-                  class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold px-6 py-3 rounded-full bg-[#019845] mt-10 sm:mt-5"
-                >
-                  <a> Read Story & Report </a>
-                </span>
-              </div>
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="img/testpict.png"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-              <div
-                class="absolute z-50 top-0 right-0 bottom-0 xl:w-4/5 lg:w-4/5 md:w-4/5 sm:w-full bg-gradient-to-l from-[#cbbade] xl:from-50% lg:from-50% md:from-50% sm:from-100% flex flex-col items-end text-white px-28 py-10 md:px-12 sm:px-2 sm:py-5 sm:px-1"
-              >
-                <div class="items-end text-right px-2">
-                  <div>
-                    <span
-                      class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-2xl"
-                      >#</span
-                    >
-                    <span class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl"
-                      >Impact</span
-                    >
-                  </div>
-                  <div
-                    class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold mb-9 mt-6"
-                  >
-                    Small Act, Huge Impact
-                  </div>
-                  <div
-                    class="flex flex-col xl:w-[40rem] lg:w-[30rem] md:w-[20rem] sm:w-auto gap-5 items-end text-right xl:text-2xl lg:text-xl md:text-md sm:text-sm"
-                  >
-                    <p>
-                      Langit Watch was first introduced to the public through a
-                      network of large mosques in Greater Malang, the An-Nur
-                      Mosque in Batu City, the Sabilillah Mosque in Malang City,
-                      and the Gadang Mosque (near the border of Malang City and
-                      Regency). The AAQMS mobile used by Langit Watch has been
-                      completed a continuous analysis for one week for each
-                      mosque to determine the type and highest levels of
-                      pollutants around the mosque. While the AAQMS is
-                      analyzing, our Langit Protector also shares information
-                      through an open seminar with everyone Most pollutants are
-                      produced by cars and motorbikes that keep the engine
-                      running even in the parking area. Together with Langit
-                      Watch, the management of the three mosques agreed to make
-                      regulations to turn off motorized vehicles while waiting
-                      in the mosque parking area and its surroundings.
-                    </p>
-                  </div>
-                </div>
-                <span
-                  class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold px-6 py-3 rounded-full bg-[#019845] mt-10 sm:mt-5"
-                >
-                  <a> Read Story & Report </a>
-                </span>
-              </div>
-            </div>
-            <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="img/mobiaircar.png"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-              <div
-                class="absolute z-50 top-0 right-0 bottom-0 xl:w-4/5 lg:w-4/5 md:w-4/5 sm:w-full bg-gradient-to-l from-[#cbbade] xl:from-50% lg:from-50% md:from-50% sm:from-100% flex flex-col items-end text-white px-28 py-10 md:px-12 sm:px-2 sm:py-5 sm:px-1"
-              >
-                <div class="items-end text-right px-2">
-                  <div>
-                    <span
-                      class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-2xl"
-                      >#</span
-                    >
-                    <span class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl"
-                      >Impact</span
-                    >
-                  </div>
-                  <div
-                    class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold mb-9 mt-6"
-                  >
-                    Small Act, Huge Impact
-                  </div>
-                  <div
-                    class="flex flex-col xl:w-[40rem] lg:w-[30rem] md:w-[20rem] sm:w-auto gap-5 items-end text-right xl:text-2xl lg:text-xl md:text-md sm:text-sm"
-                  >
-                    <p>
-                      Langit Watch was first introduced to the public through a
-                      network of large mosques in Greater Malang, the An-Nur
-                      Mosque in Batu City, the Sabilillah Mosque in Malang City,
-                      and the Gadang Mosque (near the border of Malang City and
-                      Regency). The AAQMS mobile used by Langit Watch has been
-                      completed a continuous analysis for one week for each
-                      mosque to determine the type and highest levels of
-                      pollutants around the mosque. While the AAQMS is
-                      analyzing, our Langit Protector also shares information
-                      through an open seminar with everyone Most pollutants are
-                      produced by cars and motorbikes that keep the engine
-                      running even in the parking area. Together with Langit
-                      Watch, the management of the three mosques agreed to make
-                      regulations to turn off motorized vehicles while waiting
-                      in the mosque parking area and its surroundings.
-                    </p>
-                  </div>
-                </div>
-                <span
-                  class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold px-6 py-3 rounded-full bg-[#019845] mt-10 sm:mt-5"
-                >
-                  <a> Read Story & Report </a>
-                </span>
-              </div>
-            </div>
-          </div>
-          <!-- Slider indicators -->
-          <div
-            class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
-          >
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="true"
-              aria-label="Slide 1"
-              data-carousel-slide-to="0"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 2"
-              data-carousel-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 3"
-              data-carousel-slide-to="2"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 4"
-              data-carousel-slide-to="3"
-            ></button>
-          </div>
-        </div>
-      </section>
-
-      <!-- End Section Impact -->
-
-      <!-- Section Report  -->
-
-      <section
-        class="report bg-purple-200 xl:pt-12 xl:pb-0 lg:pt-12 lg:pb-0 overflow-hidden"
-      >
-        <div class="container mx-auto xl:my-28 lg:my-16 h-full relative pt-10">
-          <div
-            class="flex flex-col xl:flex-row lg:flex-row items-center justify-between"
-          >
-            <div
-              class="hero__text xl:w-[60%] lg:w-[60%] text-center xl:text-left lg:text-left text-white"
-            >
-              <h1
-                class="text-[50px] xl:text-[100px] lg:text-[100px] font-semibold sm:text-[50px] sm:pt-8"
-              >
-                YOU
-              </h1>
-              <h1
-                class="text-[50px] xl:text-[100px] lg:text-[100px] font-bold leading-none sm:text-[50px] sm:pt-5"
-              >
-                DESERVE
-              </h1>
-              <h1
-                class="text-[50px] xl:text-[100px] lg:text-[100px] font-semibold leading-none sm:text-[50px] sm:pt-5"
-              >
-                THE
-              </h1>
-              <h1
-                class="text-[50px] xl:text-[100px] lg:text-[100px] font-semibold leading-none sm:text-[50px] sm:pt-5"
-              >
-                TRUTH
-              </h1>
-              <p
-                class="mb-[20px] xl:mb-18 lg:mb-18 md:max-w-xl text-center xl:text-left xl:text-[45px] lg:text-left lg:text-[45px] sm:text-[24px]"
-              >
-                (even if it hurts)
-              </p>
-              <button
-                class="btn btn-lg btn-outline mx-auto xl:mx-0 lg:mx-0 mb-5 w-[370px] h-[30px] sm:w-[240px] sm:h-[50px] sm:text-sm sm:mt-15 xl:mt-15"
-                data-modal-target="reportModal"
-                data-modal-toggle="reportModal"
-              >
-                See Interactive Langit Report
-              </button>
-            </div>
-            <div
-              class="flex items-center justify-center max-h-full xl:flex lg:flex md:flex xl:absolute xl:translate-x-40 xl:translate-y-36 lg:absolute lg:translate-x-32 lg:translate-y-52 md:translate-y-40 sm:translate-y-20 sm:-translate-x-8"
-            >
-              <img
-                src="img/platform.png"
-                alt=""
-                class="xl:w-[84rem] lg:w-[61rem] md:w-[50rem] sm:w-[25rem]"
-                style="max-width: none"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Start Modal Report -->
-
-      <!-- Main modal -->
-      <div
-        id="reportModal"
-        tabindex="-1"
-        aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-      >
-        <div class="relative w-full max-w-7xl max-h-full">
-          <!-- Modal content -->
-          <div class="relative bg-white rounded-lg shadow dark:bg-white">
-            <!-- Modal header -->
-            <div
-              class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
-            >
-              <h3 class="text-xl font-semibold text-white dark:text-white">
-                Terms of Service
-              </h3>
-              <button
-                type="button"
-                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                data-modal-hide="reportModal"
-              >
-                <svg
-                  class="w-3 h-3"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                  />
-                </svg>
-                <span class="sr-only">Close modal</span>
-              </button>
-            </div>
-            <!-- Modal body -->
-            <div class="grid grid-cols-2 gap-2 grid-rows-3 pt-3 px-5 w-full">
-              <!-- item 1  -->
-              <div class="row-span-2">
-                <div
-                  class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="p-8 rounded-t-lg"
-                      src="img/mobiaircar.png"
-                      alt="product image"
-                    />
-                  </a>
-                  <div class="px-5 pb-5">
-                    <a href="#">
-                      <p
-                        class="text-base font-semibold tracking-tight text-gray-900 dark:text-white"
-                      >
-                        September 13th 2023
-                      </p>
-                    </a>
-                    <div class="flex items-center justify-between gap-x-8">
-                      <div class="flex flex-col mt-2.5 mb-5 gap-y-3">
-                        <div class="flex items-center justify-normal">
-                          <i
-                            class="fa-solid fa-circle fa-2xl"
-                            style="color: #fcfcfd"
-                          ></i>
-                          <div class="flex flex-col">
-                            <h1 class="text-white px-2 font-bold">
-                              airpointer
-                            </h1>
-                            <p class="text-white px-2">
-                              Last Data 5 minutes ago
-                            </p>
-                          </div>
-                        </div>
-                        <div class="flex items-center justify-normal">
-                          <i
-                            class="fa-solid fa-circle fa-2xl"
-                            style="color: #fcfcfd"
-                          ></i>
-                          <div class="flex flex-col">
-                            <h1 class="text-white px-2 font-bold">Met One</h1>
-                            <p class="text-white px-2 text-sm">
-                              Last Data 5 minutes ago
-                            </p>
-                          </div>
-                        </div>
-                        <div class="flex items-center justify-normal">
-                          <i
-                            class="fa-solid fa-circle fa-2xl"
-                            style="color: #fcfcfd"
-                          ></i>
-                          <div class="flex flex-col">
-                            <h1 class="text-white px-2 font-bold">CCTV</h1>
-                            <p class="text-white px-2">
-                              Last Data 5 minutes ago
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col mt-2.5 mb-5">
-                        <h1 class="text-white font-bold text-2xl">AQI:ISPU</h1>
-                        <h1 class="text-white">Mon, Sep 12, 2022 3.00 PM</h1>
-                        <h1 class="text-blue-700 font-bold text-7xl">80</h1>
-                        <h1 class="text-white font-bold text-xl">Moderate</h1>
-                        <h1 class="text-white font-bold text-lg">PM2.5 39.3</h1>
-                        <h1 class="text-white font-normal text-lg">
-                          Official Pollutant
-                        </h1>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Item 2 -->
-              <div>
-                <img src="img/impact1.png" alt="" />
-              </div>
-              <!-- Item 3 -->
-              <div class="...">3</div>
-              <div class="flex items-center justify-between mb-[50rem]">
-                <h1>test</h1>
-                <h1>test</h1>
-              </div>
-              <!-- <div class="...">05</div>
-              <div class="...">06</div>
-              <div class="...">07</div> -->
-            </div>
-            <!-- Modal footer -->
-            <div
-              class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
-            >
-              <button
-                data-modal-hide="reportModal"
-                type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                I accept
-              </button>
-              <button
-                data-modal-hide="reportModal"
-                type="button"
-                class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
-              >
-                Decline
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- End modal report -->
-
-      <!-- End Section Report -->
-
-      <!-- Section Partner -->
-
-      <section class="partner section bg-white h-full">
-        <div class="container mx-auto">
-          <h2
-            class="partner__title text-[30px] xl:text-[30px] font-semibold capitalize tracking-[0.44px] text-center xl:text-left py-10"
-          >
-            Langit Partners:
-          </h2>
-          <div class="partner_slider swiper min-h-[400px] xl:min-h-[300px]">
-            <div class="swipper wrapper">
-              <div class="swiper-slide mx-6">
-                <div class="flex flex-col md:flex-row gap-y-10 xl:gap-20">
-                  <div class="flex-1 flex flex-col xl:flex-row">
-                    <div
-                      class="flex flex-col xl:flex-row items-center gap-[30px]"
-                    >
-                      <div class="flex-1">
-                        <img
-                          src="img/mobiair-logo.png"
-                          alt=""
-                          style="width: 75%"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex-1 flex flex-col xl:flex-row">
-                    <div
-                      class="flex flex-col xl:flex-row items-center gap-[30px]"
-                    >
-                      <div class="flex-1">
-                        <img
-                          src="img/apaq-group.png"
-                          alt=""
-                          style="width: 75%"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex-1 flex flex-col xl:flex-row">
-                    <div
-                      class="flex flex-col xl:flex-row items-center gap-[30px]"
-                    >
-                      <div class="flex-1">
-                        <button
-                          class="btn btn-lg btn-outline mx-6 xl:mx-0 my-10"
-                          data-modal-target="modal_partner"
-                          data-modal-toggle="modal_partner"
-                        >
-                          Become a partner
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Start Modal Partner -->
-      <div
-        id="modal_partner"
-        tabindex="-1"
-        aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-      >
+      <!-- start modal map -->
+      <div id="modal_map" tabindex="-1" aria-hidden="true"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative w-full max-w-2xl max-h-full">
           <!-- Modal content -->
           <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
             <!-- Modal header -->
-            <div
-              class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
-            >
+            <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
               <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                Partner Form
+                Set Your Location
               </h3>
-              <button
-                type="button"
+              <button type="button"
                 class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                data-modal-hide="modal_partner"
-              >
-                <svg
-                  class="w-3 h-3"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                  />
+                data-modal-hide="modal_map">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                 </svg>
                 <span class="sr-only">Close</span>
               </button>
             </div>
             <!-- Modal body -->
             <div class="p-6 space-y-6">
-              <div class="mt-2 sm:col-span-3">
+              <div id="map" class="h-96"></div>
+              <p class="text-sm">
+                “We are currently reaching our concurrent petition count
+                limits”
+              </p>
+            </div>
+            <!-- Modal footer -->
+            <div
+              class="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+              <button data-modal-hide="modal_map" type="button"
+                class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
+                Close
+              </button>
+              <button data-modal-hide="modal_map" type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Set Location
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal map -->
+      <!-- End modal campaign -->
+      <div class="bg-white flex flex-col py-14 pl-5 pr-5 sm:pl-[20px] sm:pr-3 justify-center">
+        <div class="flex mb-10 items-start text-black xl:text-3xl text-3xl text-left font-bold flex-row gap-5">
+          <span> Top Petitions </span>
+          <button class="btn btn-sm btn-outline mx-auto xl:mx-0 text-sm xl:text-lg w-30" data-modal-target="modal_hero"
+            data-modal-toggle="modal_hero">
+            See More
+          </button>
+        </div>
+
+        <div class="flex min-h-[80px] gap-5 items-start mb-5">
+          <div class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0">
+            <div class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                <path
+                  d="M1.94631 9.31555C1.42377 9.14137 1.41965 8.86034 1.95706 8.6812L21.0433 2.31913C21.5717 2.14297 21.8748 2.43878 21.7268 2.95706L16.2736 22.0433C16.1226 22.5718 15.8179 22.5901 15.5946 22.0877L12.0002 14.0002L18.0002 6.00017L10.0002 12.0002L1.94631 9.31555Z"
+                  fill="rgba(255,255,255,1)"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="flex gap-1">
+            <span class="text-black text-3xl text-left font-semibold">
+              Jalak Bali II (279 Votes / 12 Days)
+            </span>
+          </div>
+        </div>
+
+        <div class="flex min-h-[80px] gap-5 items-start mb-5">
+          <div class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0">
+            <div class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                <path
+                  d="M1.94631 9.31555C1.42377 9.14137 1.41965 8.86034 1.95706 8.6812L21.0433 2.31913C21.5717 2.14297 21.8748 2.43878 21.7268 2.95706L16.2736 22.0433C16.1226 22.5718 15.8179 22.5901 15.5946 22.0877L12.0002 14.0002L18.0002 6.00017L10.0002 12.0002L1.94631 9.31555Z"
+                  fill="rgba(255,255,255,1)"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="flex gap-1">
+            <span class="text-black text-3xl text-left font-semibold">
+              Ayam Bekisar (198 Votes / 6 Days)
+            </span>
+          </div>
+        </div>
+
+        <div class="flex min-h-[80px] gap-5 items-start mb-5">
+          <div class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0">
+            <div class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                <path
+                  d="M1.94631 9.31555C1.42377 9.14137 1.41965 8.86034 1.95706 8.6812L21.0433 2.31913C21.5717 2.14297 21.8748 2.43878 21.7268 2.95706L16.2736 22.0433C16.1226 22.5718 15.8179 22.5901 15.5946 22.0877L12.0002 14.0002L18.0002 6.00017L10.0002 12.0002L1.94631 9.31555Z"
+                  fill="rgba(255,255,255,1)"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="flex gap-1">
+            <span class="text-black text-3xl text-left font-semibold">
+              Sedap Malam (109 Votes / 6 Days)
+            </span>
+          </div>
+        </div>
+
+        <div class="flex min-h-[80px] gap-5 items-start mb-5">
+          <div class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0">
+            <div class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                <path
+                  d="M1.94631 9.31555C1.42377 9.14137 1.41965 8.86034 1.95706 8.6812L21.0433 2.31913C21.5717 2.14297 21.8748 2.43878 21.7268 2.95706L16.2736 22.0433C16.1226 22.5718 15.8179 22.5901 15.5946 22.0877L12.0002 14.0002L18.0002 6.00017L10.0002 12.0002L1.94631 9.31555Z"
+                  fill="rgba(255,255,255,1)"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="flex gap-1">
+            <span class="text-black text-3xl text-left font-semibold">
+              Sedap Malam (80 Votes / 8 Days)
+            </span>
+          </div>
+        </div>
+
+        <div class="flex min-h-[80px] gap-5 items-start mb-5">
+          <div class="w-12 flex h-full flex-col items-center flex-grow-0 flex-shrink-0">
+            <div class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                <path
+                  d="M1.94631 9.31555C1.42377 9.14137 1.41965 8.86034 1.95706 8.6812L21.0433 2.31913C21.5717 2.14297 21.8748 2.43878 21.7268 2.95706L16.2736 22.0433C16.1226 22.5718 15.8179 22.5901 15.5946 22.0877L12.0002 14.0002L18.0002 6.00017L10.0002 12.0002L1.94631 9.31555Z"
+                  fill="rgba(255,255,255,1)"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="flex gap-1">
+            <span class="text-black text-3xl text-left font-semibold">
+              Sedap Malam (20 Votes / 10 Days)
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Modal Petitions -->
+    <div id="modal_petition" tabindex="-1" aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-white">
+          <!-- Modal header -->
+          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+            <h3 class="text-xl font-semibold text-white dark:text-gray-900">
+              See More Petitions
+            </h3>
+            <button type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-hide="modal_petition">
+              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+              </svg>
+              <span class="sr-only">Close</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6 space-y-6">
+            <!-- <div class="mt-2 sm:col-span-3">
                 <label
                   for="phone_number"
                   class="block text-sm font-medium leading-6 text-gray-900"
@@ -1645,8 +696,8 @@
                     class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
-              </div>
-              <div class="mt-2 sm:col-span-3">
+              </div> -->
+            <!-- <div class="mt-2 sm:col-span-3">
                 <label
                   for="location"
                   class="block text-sm font-medium leading-6 text-gray-900"
@@ -1669,362 +720,764 @@
                     Show Map
                   </button>
                 </div>
-              </div>
-              <div class="mt-2 sm:col-span-3">
-                <label
-                  for="description"
-                  class="block text-sm font-medium leading-6 text-gray-900"
-                  >Description</label
-                >
-                <div>
-                  <textarea
-                    name="description"
-                    id="description"
-                    autocomplete="phone-number"
-                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  ></textarea>
-                </div>
+              </div> -->
+            <div class="mt-2 sm:col-span-3">
+              <label for="description" class="block text-sm font-medium leading-6 text-gray-900">Description</label>
+              <div>
+                <textarea name="description" id="description" autocomplete="phone-number"
+                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
               </div>
             </div>
-            <!-- Modal footer -->
-            <div
-              class="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
-            >
-              <button
-                data-modal-hide="modal_partner"
-                type="button"
-                class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
-              >
-                Close
-              </button>
-              <button
-                data-modal-hide="modal_partner"
-                type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Create Campaign
-              </button>
-            </div>
+          </div>
+          <!-- Modal footer -->
+          <div
+            class="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+            <button data-modal-hide="modal_petition" type="button"
+              class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
+              Close
+            </button>
+            <button data-modal-hide="modal_petition" type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Read More
+            </button>
           </div>
         </div>
       </div>
-
-      <!-- End modal partner -->
-
-      <!-- End sectiom partner -->
-
-      <!-- section Faq -->
-
-      <section class="faq bg-purple-200 py-10">
-        <div class="container mx-auto">
-          <h2
-            class="faq__title text-[30px] xl:text-[26px] font-semibold capitalize tracking-[0.44px] text-center xl:text-left py-5"
-          >
-            Frequently Asked Questions
-          </h2>
-          <!-- item wrapper -->
-          <div class="mx-auto">
-            <!-- item -->
-            <div
-              class="faq__item px-[30px] pt-7 pb-4 cursor-pointer select-none"
-            >
-              <!-- Title and icon -->
-              <div class="flex items-center mb-[30px] gap-3">
-                <i class="ri-arrow-right-s-line text-2xl"></i>
-                <div class="faq__btn">
-                  <h4
-                    class="text-[20px] xl:text-[20px] font-semibold capitalize"
-                  >
-                    Why do we use USEPA Standard CAAQMS?
-                  </h4>
-                </div>
-              </div>
-              <!-- Answer Text -->
-              <div class="faq__answer h-0 overflow-hidden">
-                <p class="px-14 font-semibold sm:px-2">
-                  It is the highest international standard, accurate & legally
-                  defendable. The CAAQMS uses field calibration with continuous
-                  validation.
-                </p>
-              </div>
-            </div>
-            <div
-              class="faq__item px-[30px] pt-7 pb-4 cursor-pointer select-none"
-            >
-              <!-- Title and icon -->
-              <div class="flex items-center mb-[30px] gap-3">
-                <i class="ri-arrow-right-s-line text-2xl"></i>
-                <div class="faq__btn">
-                  <h4
-                    class="text-[20px] xl:text-[20px] font-semibold capitalize"
-                  >
-                    Why don't we use electrochemical-based sensors?
-                  </h4>
-                </div>
-              </div>
-              <!-- Answer Text -->
-              <div class="faq__answer h-0 overflow-hidden">
-                <p class="px-14 font-semibold sm:px-2">
-                  Because it’s limitations:
-                  <br />
-                  • Affected by temperature/humidity
-                  <br />
-                  • Cross-sensitivity
-                  <br />
-                  • Detection limit > WHO Guidelines
-                  <br />
-                  • No validation and no drift compensation
-                </p>
-              </div>
-            </div>
-            <div
-              class="faq__item px-[30px] pt-7 pb-4 cursor-pointer select-none"
-            >
-              <!-- Title and icon -->
-              <div class="flex items-center mb-[30px] gap-3">
-                <i class="ri-arrow-right-s-line text-2xl"></i>
-                <div class="faq__btn">
-                  <h4
-                    class="text-[20px] xl:text-[20px] font-semibold capitalize"
-                  >
-                    Why do we only have one Mobile CAAQMS?
-                  </h4>
-                </div>
-              </div>
-              <!-- Answer Text -->
-              <div class="faq__answer h-0 overflow-hidden">
-                <p class="px-14 font-semibold sm:px-2">
-                  A USEPA Standard CAAQMS is a high-end technology, which
-                  affects the higher price of the unit. At the moment, there is
-                  only one group of companies that share the same vision as us
-                  and are kind enough to lend their CAAQMS for free.
-                  <br />
-                  If you are a company or group of companies that can support
-                  our activity by lending your internationally-standardize
-                  CAAQMS, here is the link to
-                  <a
-                    href="mailto:contact@langit.watch"
-                    style="color: blue; text-decoration: underline"
-                    >contact us.</a
-                  >
-                </p>
-              </div>
-            </div>
-            <div
-              class="faq__item px-[30px] pt-7 pb-4 cursor-pointer select-none"
-            >
-              <!-- Title and icon -->
-              <div class="flex items-center mb-[30px] gap-3">
-                <i class="ri-arrow-right-s-line text-2xl"></i>
-                <div class="faq__btn">
-                  <h4
-                    class="text-[20px] xl:text-[20px] font-semibold capitalize"
-                  >
-                    Why do we still use Fossil-Fuel-Vehicle to transport the
-                    CAAQMS?
-                  </h4>
-                </div>
-              </div>
-              <!-- Answer Text -->
-              <div class="faq__answer h-0 overflow-hidden">
-                <p class="px-14 font-semibold sm:px-2">
-                  Because the current price of electric vehicles is still
-                  unaffordable, our partners selectively chose a new Toyota
-                  Hilux truck to transport our CAAQMS, as penance we committed
-                  to donating one tree for every kilometer the truck traveled to
-                  the campaign location.
-                  <br />
-                  If you have a better solution for transporting a fragile unit
-                  weighing almost 250kg, we would like to hear from you,
-                  <a
-                    href="mailto:contact@langit.watch"
-                    style="color: blue; text-decoration: underline"
-                    >contact us.</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- End Section Faq -->
-
-      <!-- Footer -->
-      <footer class="footer pt-12 xl:pt-[50px] bg-black">
-        <div class="container mx-auto pb-12 xl:pb-[100px]">
-          <div class="flex flex-col xl:flex-row justify-between">
-            <div class="footer__item flex-1">
-              <div class="flex mb-10">
-                <ul
-                  class="flex-1 flex flex-col gap-y-5 text-2xl font-semibold text-white"
-                >
-                  <li><a href="#">Report a Location</a></li>
-                  <li><a href="#">On-going Campaign</a></li>
-                  <li><a href="#">Top Petitions</a></li>
-                  <li><a href="#">Impact</a></li>
-                  <li><a href="#">Langit Report</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer__item flex flex-1 flex-col">
-              <a href="">
-                <img
-                  class="mb-[30px] xl:float-right sm:float-left"
-                  src="img/langitwatch-white.png"
-                  alt=""
-                  style="width: 50%"
-                />
-              </a>
-              <div class="flex xl:justify-end mb-2 gap-x-5">
-                <!-- Facebook Icon -->
-                <a href="#" class="text-white hover:text-white">
-                  <i class="fa-brands fa-facebook fa-2xl"></i>
-                </a>
-
-                <!-- Twitter Icon -->
-                <a href="#" class="text-white hover:text-white">
-                  <i class="fa-brands fa-x-twitter fa-2xl"></i>
-                </a>
-
-                <a href="#" class="text-white hover:text-white">
-                  <i class="fa-brands fa-youtube fa-2xl"></i>
-                </a>
-
-                <a href="#" class="text-white hover:text-white">
-                  <i class="fa-brands fa-instagram fa-2xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <!-- End Footer -->
     </div>
-    <!-- Extra Large Modal -->
-    <div
-      id="defaultModal"
-      tabindex="-1"
-      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-    >
-      <div class="relative w-full max-w-7xl max-h-full">
-        <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow white:bg-gray-700">
-          <!-- Modal header -->
-          <div
-            class="flex items-center justify-between p-5 border-b rounded-t white:border-gray-600"
-          >
-            <h3 class="text-xl font-medium text-gray-900 white:text-white">
-              Donate Now
-            </h3>
+
+    <!-- End Modal Petitions -->
+
+    <!-- Section Impact -->
+
+    <section class="relative impact bg-white w-full h-full">
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <div class="relative h-[40rem] lg:h-[60rem] md:h-[45rem] sm:h-[40rem] overflow-hidden rounded-lg">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/img/impact1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..." />
+            <div
+              class="absolute z-50 top-0 right-0 bottom-0 xl:w-4/5 lg:w-4/5 md:w-4/5 sm:w-full bg-gradient-to-l from-[#cbbade] xl:from-50% lg:from-50% md:from-50% sm:from-100% flex flex-col items-end text-white px-28 py-10 md:px-12 sm:px-2 sm:py-5 sm:px-2 sm:py-5">
+              <div class="items-end text-right px-2">
+                <div>
+                  <span class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-2xl">#</span>
+                  <span class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl">Impact</span>
+                </div>
+                <div class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold mb-9 mt-6">
+                  Small Act, Huge Impact
+                </div>
+                <div
+                  class="flex flex-col xl:w-[40rem] lg:w-[30rem] md:w-[20rem] sm:w-auto gap-5 items-end text-right xl:text-2xl lg:text-xl md:text-md sm:text-sm">
+                  <p>
+                    Langit Watch was first introduced to the public through a
+                    network of large mosques in Greater Malang, the An-Nur
+                    Mosque in Batu City, the Sabilillah Mosque in Malang City,
+                    and the Gadang Mosque (near the border of Malang City and
+                    Regency). The AAQMS mobile used by Langit Watch has been
+                    completed a continuous analysis for one week for each
+                    mosque to determine the type and highest levels of
+                    pollutants around the mosque. While the AAQMS is
+                    analyzing, our Langit Protector also shares information
+                    through an open seminar with everyone Most pollutants are
+                    produced by cars and motorbikes that keep the engine
+                    running even in the parking area. Together with Langit
+                    Watch, the management of the three mosques agreed to make
+                    regulations to turn off motorized vehicles while waiting
+                    in the mosque parking area and its surroundings.
+                  </p>
+                </div>
+              </div>
+              <span
+                class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold px-6 py-3 rounded-full bg-[#019845] mt-10 sm:mt-5">
+                <a> Read Story & Report </a>
+              </span>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/mobiaircar.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div
+              class="absolute z-50 top-0 right-0 bottom-0 xl:w-4/5 lg:w-4/5 md:w-4/5 sm:w-full bg-gradient-to-l from-[#cbbade] xl:from-50% lg:from-50% md:from-50% sm:from-100% flex flex-col items-end text-white px-28 py-10 md:px-12 sm:px-2 sm:py-5 sm:px-1">
+              <div class="items-end text-right px-2">
+                <div>
+                  <span class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-2xl">#</span>
+                  <span class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl">Impact</span>
+                </div>
+                <div class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold mb-9 mt-6">
+                  Small Act, Huge Impact
+                </div>
+                <div
+                  class="flex flex-col xl:w-[40rem] lg:w-[30rem] md:w-[20rem] sm:w-auto gap-5 items-end text-right xl:text-2xl lg:text-xl md:text-md sm:text-sm">
+                  <p>
+                    Langit Watch was first introduced to the public through a
+                    network of large mosques in Greater Malang, the An-Nur
+                    Mosque in Batu City, the Sabilillah Mosque in Malang City,
+                    and the Gadang Mosque (near the border of Malang City and
+                    Regency). The AAQMS mobile used by Langit Watch has been
+                    completed a continuous analysis for one week for each
+                    mosque to determine the type and highest levels of
+                    pollutants around the mosque. While the AAQMS is
+                    analyzing, our Langit Protector also shares information
+                    through an open seminar with everyone Most pollutants are
+                    produced by cars and motorbikes that keep the engine
+                    running even in the parking area. Together with Langit
+                    Watch, the management of the three mosques agreed to make
+                    regulations to turn off motorized vehicles while waiting
+                    in the mosque parking area and its surroundings.
+                  </p>
+                </div>
+              </div>
+              <span
+                class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold px-6 py-3 rounded-full bg-[#019845] mt-10 sm:mt-5">
+                <a> Read Story & Report </a>
+              </span>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/testpict.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..." />
+            <div
+              class="absolute z-50 top-0 right-0 bottom-0 xl:w-4/5 lg:w-4/5 md:w-4/5 sm:w-full bg-gradient-to-l from-[#cbbade] xl:from-50% lg:from-50% md:from-50% sm:from-100% flex flex-col items-end text-white px-28 py-10 md:px-12 sm:px-2 sm:py-5 sm:px-1">
+              <div class="items-end text-right px-2">
+                <div>
+                  <span class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-2xl">#</span>
+                  <span class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl">Impact</span>
+                </div>
+                <div class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold mb-9 mt-6">
+                  Small Act, Huge Impact
+                </div>
+                <div
+                  class="flex flex-col xl:w-[40rem] lg:w-[30rem] md:w-[20rem] sm:w-auto gap-5 items-end text-right xl:text-2xl lg:text-xl md:text-md sm:text-sm">
+                  <p>
+                    Langit Watch was first introduced to the public through a
+                    network of large mosques in Greater Malang, the An-Nur
+                    Mosque in Batu City, the Sabilillah Mosque in Malang City,
+                    and the Gadang Mosque (near the border of Malang City and
+                    Regency). The AAQMS mobile used by Langit Watch has been
+                    completed a continuous analysis for one week for each
+                    mosque to determine the type and highest levels of
+                    pollutants around the mosque. While the AAQMS is
+                    analyzing, our Langit Protector also shares information
+                    through an open seminar with everyone Most pollutants are
+                    produced by cars and motorbikes that keep the engine
+                    running even in the parking area. Together with Langit
+                    Watch, the management of the three mosques agreed to make
+                    regulations to turn off motorized vehicles while waiting
+                    in the mosque parking area and its surroundings.
+                  </p>
+                </div>
+              </div>
+              <span
+                class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold px-6 py-3 rounded-full bg-[#019845] mt-10 sm:mt-5">
+                <a> Read Story & Report </a>
+              </span>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/mobiaircar.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div
+              class="absolute z-50 top-0 right-0 bottom-0 xl:w-4/5 lg:w-4/5 md:w-4/5 sm:w-full bg-gradient-to-l from-[#cbbade] xl:from-50% lg:from-50% md:from-50% sm:from-100% flex flex-col items-end text-white px-28 py-10 md:px-12 sm:px-2 sm:py-5 sm:px-1">
+              <div class="items-end text-right px-2">
+                <div>
+                  <span class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-2xl">#</span>
+                  <span class="xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl">Impact</span>
+                </div>
+                <div class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold mb-9 mt-6">
+                  Small Act, Huge Impact
+                </div>
+                <div
+                  class="flex flex-col xl:w-[40rem] lg:w-[30rem] md:w-[20rem] sm:w-auto gap-5 items-end text-right xl:text-2xl lg:text-xl md:text-md sm:text-sm">
+                  <p>
+                    Langit Watch was first introduced to the public through a
+                    network of large mosques in Greater Malang, the An-Nur
+                    Mosque in Batu City, the Sabilillah Mosque in Malang City,
+                    and the Gadang Mosque (near the border of Malang City and
+                    Regency). The AAQMS mobile used by Langit Watch has been
+                    completed a continuous analysis for one week for each
+                    mosque to determine the type and highest levels of
+                    pollutants around the mosque. While the AAQMS is
+                    analyzing, our Langit Protector also shares information
+                    through an open seminar with everyone Most pollutants are
+                    produced by cars and motorbikes that keep the engine
+                    running even in the parking area. Together with Langit
+                    Watch, the management of the three mosques agreed to make
+                    regulations to turn off motorized vehicles while waiting
+                    in the mosque parking area and its surroundings.
+                  </p>
+                </div>
+              </div>
+              <span
+                class="xl:text-3xl lg:text-xl md:text-xl sm:text-md font-semibold px-6 py-3 rounded-full bg-[#019845] mt-10 sm:mt-5">
+                <a> Read Story & Report </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+            data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+            data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+            data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+            data-carousel-slide-to="3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Impact -->
+
+    <!-- Section Report  -->
+
+    <section class="report bg-purple-200 xl:pt-12 xl:pb-0 lg:pt-12 lg:pb-0 overflow-hidden">
+      <div class="container mx-auto xl:my-28 lg:my-16 h-full relative pt-10">
+        <div class="flex flex-col xl:flex-row lg:flex-row items-center justify-between">
+          <div class="hero__text xl:w-[60%] lg:w-[60%] text-center xl:text-left lg:text-left text-white">
+            <h1 class="text-[50px] xl:text-[100px] lg:text-[100px] font-semibold sm:text-[50px] sm:pt-8">
+              YOU
+            </h1>
+            <h1 class="text-[50px] xl:text-[100px] lg:text-[100px] font-bold leading-none sm:text-[50px] sm:pt-5">
+              DESERVE
+            </h1>
+            <h1 class="text-[50px] xl:text-[100px] lg:text-[100px] font-semibold leading-none sm:text-[50px] sm:pt-5">
+              THE
+            </h1>
+            <h1 class="text-[50px] xl:text-[100px] lg:text-[100px] font-semibold leading-none sm:text-[50px] sm:pt-5">
+              TRUTH
+            </h1>
+            <p
+              class="mb-[20px] xl:mb-18 lg:mb-18 md:max-w-xl text-center xl:text-left xl:text-[45px] lg:text-left lg:text-[45px] sm:text-[24px]">
+              (even if it hurts)
+            </p>
             <button
-              type="button"
-              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center white:hover:bg-gray-600 white:hover:text-white"
-              data-modal-hide="defaultModal"
-            >
-              <svg
-                class="w-3 h-3"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                />
+              class="btn btn-lg btn-outline mx-auto xl:mx-0 lg:mx-0 mb-5 w-[370px] h-[30px] sm:w-[240px] sm:h-[50px] sm:text-sm sm:mt-15 xl:mt-15"
+              data-modal-target="reportModal" data-modal-toggle="reportModal">
+              See Interactive Langit Report
+            </button>
+          </div>
+          <div
+            class="flex items-center justify-center max-h-full xl:flex lg:flex md:flex xl:absolute xl:translate-x-40 xl:translate-y-36 lg:absolute lg:translate-x-32 lg:translate-y-52 md:translate-y-40 sm:translate-y-20 sm:-translate-x-8">
+            <img src="img/platform.png" alt="" class="xl:w-[84rem] lg:w-[61rem] md:w-[50rem] sm:w-[25rem]"
+              style="max-width: none" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Modal Report -->
+
+    <!-- Main modal -->
+    <div id="reportModal" tabindex="-1" aria-hidden="true"
+      class="fixed hidden top-0 left-0 right-0 z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0">
+      <div class="relative w-full max-w-7xl max-h-full self-start">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-white">
+          <!-- Modal header -->
+          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+            <h3 class="text-xl font-semibold text-white dark:text-white">
+              Terms of Service
+            </h3>
+            <button type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-hide="reportModal">
+              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
               </svg>
               <span class="sr-only">Close modal</span>
             </button>
           </div>
           <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <p
-              class="text-xl leading-relaxed text-gray-500 white:text-gray-400"
-            >
-              At the moment, Only partners can donate
-            </p>
+          <div>
+            <!-- row 1 -->
+            <div class="flex h-fit p-4 gap-5 min-h-[600px] bg-slate-800 ">
+              <!-- card left -->
+              <div
+                class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-1">
+                <a href="#">
+                  <img class="p-8 rounded-t-lg" src="img/mobiaircar.png" alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                  <a href="#">
+                    <p class="text-base font-semibold tracking-tight text-gray-900 dark:text-white">
+                      September 13th 2023
+                    </p>
+                  </a>
+                  <div class="flex items-center justify-between gap-x-8">
+                    <div class="flex flex-col mt-2.5 mb-5 gap-y-3">
+                      <div class="flex items-center justify-normal">
+                        <i class="fa-solid fa-circle fa-2xl" style="color: #fcfcfd"></i>
+                        <div class="flex flex-col">
+                          <h1 class="text-white px-2 font-bold">
+                            airpointer
+                          </h1>
+                          <p class="text-white px-2">
+                            Last Data 5 minutes ago
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-normal">
+                        <i class="fa-solid fa-circle fa-2xl" style="color: #fcfcfd"></i>
+                        <div class="flex flex-col">
+                          <h1 class="text-white px-2 font-bold">Met One</h1>
+                          <p class="text-white px-2 text-sm">
+                            Last Data 5 minutes ago
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-normal">
+                        <i class="fa-solid fa-circle fa-2xl" style="color: #fcfcfd"></i>
+                        <div class="flex flex-col">
+                          <h1 class="text-white px-2 font-bold">CCTV</h1>
+                          <p class="text-white px-2">
+                            Last Data 5 minutes ago
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col mt-2.5 mb-5">
+                      <h1 class="text-white font-bold text-2xl">AQI:ISPU</h1>
+                      <h1 class="text-white">Mon, Sep 12, 2022 3.00 PM</h1>
+                      <h1 class="text-blue-700 font-bold text-7xl">80</h1>
+                      <h1 class="text-white font-bold text-xl">Moderate</h1>
+                      <h1 class="text-white font-bold text-lg">PM2.5 39.3</h1>
+                      <h1 class="text-white font-normal text-lg">
+                        Official Pollutant
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card right -->
+              <div class="flex-1 gap-5 flex-col flex">
+                <div class="h-4/6 bg-slate-600 w-full"> 
+
+                </div>
+                <div class="h-2/6 w-full bg-red-700 flex">
+                  <div class="w-3/5 h-full bg-yellow-500"> 
+
+                  </div>
+                  <div class="flex-1 bg-slate-700 flex flex-col p-5 gap-3 text-white"> 
+                    <div class="flex-1 flex justify-center items-center"> 
+                      <div class="w-10 h-10 rounded-full bg-pink-600 justify-center items-center flex"> 5 </div>
+                    </div>
+                    <div class="flex-1 flex gap-4">
+                      <div class="w-fit flex justify-center items-center"> 
+                          <div class="w-10 h-10 rounded-full bg-pink-600 justify-center items-center flex"> 5 </div>
+                      </div> 
+                      <div class="flex-1 flex gap-4 justify-center items-center">
+                        <div class="w-10 h-10 rounded-full bg-pink-600 justify-center items-center flex"> - </div>
+                        <div class="w-10 h-10 rounded-full bg-pink-600 justify-center items-center flex"> + </div>
+                      </div>
+                      <div class="w-fit flex justify-center items-center"> 
+                        <div class="w-10 h-10 rounded-full bg-pink-600 justify-center items-center flex"> 5 </div>
+                    </div> 
+                    </div>
+                    <div class="flex-1 flex justify-center items-center"> 
+                      <div class="w-10 h-10 rounded-full bg-pink-600 justify-center items-center flex"> 5 </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- Modal footer -->
-          <div
-            class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b white:border-gray-600"
-          >
-            <!-- <button data-modal-hide="extralarge-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
-                    <button data-modal-hide="extralarge-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button> -->
+          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+            <button data-modal-hide="reportModal" type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              I accept
+            </button>
+            <button data-modal-hide="reportModal" type="button"
+              class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
+              Decline
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <!-- Swipper -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- Scroll Reveal -->
-    <script src="js/scrollreveal.min.js"></script>
-    <!-- Main js -->
-    <script src="js/main.js"></script>
-    <script>
-      function modalCyc() {
-        document.getElementById("modal_campaign").style.display = "block";
-        document.querySelector("body").style.overflowY = "hidden";
-      }
-      function closeModalcyc() {
-        document.getElementById("modal_campaign").style.display = "none";
-        document.querySelector("body").style.overflowY = "auto";
-      }
-      function closeModalmap() {
-        document.getElementById("modal_map").style.display = "none";
-      }
-      function showmap() {
-        let map, marker, clickMapListener;
-        map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: -5.145357470781656, lng: 113.766312196875 },
-          zoom: 5,
+    <!-- End modal report -->
+
+    <!-- End Section Report -->
+
+    <!-- Section Partner -->
+
+    <section class="partner section bg-white h-full">
+      <div class="container mx-auto">
+        <h2
+          class="partner__title text-[30px] xl:text-[30px] font-semibold capitalize tracking-[0.44px] text-center xl:text-left py-10">
+          Langit Partners:
+        </h2>
+        <div class="partner_slider swiper min-h-[400px] xl:min-h-[300px]">
+          <div class="swipper wrapper">
+            <div class="swiper-slide mx-6">
+              <div class="flex flex-col md:flex-row gap-y-10 xl:gap-20">
+                <div class="flex-1 flex flex-col xl:flex-row">
+                  <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                    <div class="flex-1">
+                      <img src="img/mobiair-logo.png" alt="" style="width: 75%" />
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-1 flex flex-col xl:flex-row">
+                  <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                    <div class="flex-1">
+                      <img src="img/apaq-group.png" alt="" style="width: 75%" />
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-1 flex flex-col xl:flex-row">
+                  <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                    <div class="flex-1">
+                      <button class="btn btn-lg btn-outline mx-6 xl:mx-0 my-10" data-modal-target="modal_partner"
+                        data-modal-toggle="modal_partner">
+                        Become a partner
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Modal Partner -->
+    <div id="modal_partner" tabindex="-1" aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Partner Form
+            </h3>
+            <button type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-hide="modal_partner">
+              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+              </svg>
+              <span class="sr-only">Close</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6 space-y-6">
+            <div class="mt-2 sm:col-span-3">
+              <label for="phone_number" class="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
+              <div>
+                <input type="text" name="phone_number" id="phone_number" autocomplete="phone-number"
+                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+              </div>
+            </div>
+            <div class="mt-2 sm:col-span-3">
+              <label for="location" class="block text-sm font-medium leading-6 text-gray-900">Set Location</label>
+              <div>
+                <input type="hidden" name="location" id="location" autocomplete="phone-number"
+                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                <button
+                  class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2  focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-full mt-2"
+                  data-modal-target="modal_map" data-modal-toggle="modal_map" onclick="showmap()">
+                  Show Map
+                </button>
+              </div>
+            </div>
+            <div class="mt-2 sm:col-span-3">
+              <label for="description" class="block text-sm font-medium leading-6 text-gray-900">Description</label>
+              <div>
+                <textarea name="description" id="description" autocomplete="phone-number"
+                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+              </div>
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div
+            class="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+            <button data-modal-hide="modal_partner" type="button"
+              class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
+              Close
+            </button>
+            <button data-modal-hide="modal_partner" type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Create Campaign
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End modal partner -->
+
+    <!-- End sectiom partner -->
+
+    <!-- section Faq -->
+
+    <section class="faq bg-purple-200 py-10">
+      <div class="container mx-auto">
+        <h2
+          class="faq__title text-[30px] xl:text-[26px] font-semibold capitalize tracking-[0.44px] text-center xl:text-left py-5">
+          Frequently Asked Questions
+        </h2>
+        <!-- item wrapper -->
+        <div class="mx-auto">
+          <!-- item -->
+          <div class="faq__item px-[30px] pt-7 pb-4 cursor-pointer select-none">
+            <!-- Title and icon -->
+            <div class="flex items-center mb-[30px] gap-3">
+              <i class="ri-arrow-right-s-line text-2xl"></i>
+              <div class="faq__btn">
+                <h4 class="text-[20px] xl:text-[20px] font-semibold capitalize">
+                  Why do we use USEPA Standard CAAQMS?
+                </h4>
+              </div>
+            </div>
+            <!-- Answer Text -->
+            <div class="faq__answer h-0 overflow-hidden">
+              <p class="px-14 font-semibold sm:px-2">
+                It is the highest international standard, accurate & legally
+                defendable. The CAAQMS uses field calibration with continuous
+                validation.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item px-[30px] pt-7 pb-4 cursor-pointer select-none">
+            <!-- Title and icon -->
+            <div class="flex items-center mb-[30px] gap-3">
+              <i class="ri-arrow-right-s-line text-2xl"></i>
+              <div class="faq__btn">
+                <h4 class="text-[20px] xl:text-[20px] font-semibold capitalize">
+                  Why don't we use electrochemical-based sensors?
+                </h4>
+              </div>
+            </div>
+            <!-- Answer Text -->
+            <div class="faq__answer h-0 overflow-hidden">
+              <p class="px-14 font-semibold sm:px-2">
+                Because it’s limitations:
+                <br />
+                • Affected by temperature/humidity
+                <br />
+                • Cross-sensitivity
+                <br />
+                • Detection limit > WHO Guidelines
+                <br />
+                • No validation and no drift compensation
+              </p>
+            </div>
+          </div>
+          <div class="faq__item px-[30px] pt-7 pb-4 cursor-pointer select-none">
+            <!-- Title and icon -->
+            <div class="flex items-center mb-[30px] gap-3">
+              <i class="ri-arrow-right-s-line text-2xl"></i>
+              <div class="faq__btn">
+                <h4 class="text-[20px] xl:text-[20px] font-semibold capitalize">
+                  Why do we only have one Mobile CAAQMS?
+                </h4>
+              </div>
+            </div>
+            <!-- Answer Text -->
+            <div class="faq__answer h-0 overflow-hidden">
+              <p class="px-14 font-semibold sm:px-2">
+                A USEPA Standard CAAQMS is a high-end technology, which
+                affects the higher price of the unit. At the moment, there is
+                only one group of companies that share the same vision as us
+                and are kind enough to lend their CAAQMS for free.
+                <br />
+                If you are a company or group of companies that can support
+                our activity by lending your internationally-standardize
+                CAAQMS, here is the link to
+                <a href="mailto:contact@langit.watch" style="color: blue; text-decoration: underline">contact us.</a>
+              </p>
+            </div>
+          </div>
+          <div class="faq__item px-[30px] pt-7 pb-4 cursor-pointer select-none">
+            <!-- Title and icon -->
+            <div class="flex items-center mb-[30px] gap-3">
+              <i class="ri-arrow-right-s-line text-2xl"></i>
+              <div class="faq__btn">
+                <h4 class="text-[20px] xl:text-[20px] font-semibold capitalize">
+                  Why do we still use Fossil-Fuel-Vehicle to transport the
+                  CAAQMS?
+                </h4>
+              </div>
+            </div>
+            <!-- Answer Text -->
+            <div class="faq__answer h-0 overflow-hidden">
+              <p class="px-14 font-semibold sm:px-2">
+                Because the current price of electric vehicles is still
+                unaffordable, our partners selectively chose a new Toyota
+                Hilux truck to transport our CAAQMS, as penance we committed
+                to donating one tree for every kilometer the truck traveled to
+                the campaign location.
+                <br />
+                If you have a better solution for transporting a fragile unit
+                weighing almost 250kg, we would like to hear from you,
+                <a href="mailto:contact@langit.watch" style="color: blue; text-decoration: underline">contact us.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Faq -->
+
+    <!-- Footer -->
+    <footer class="footer pt-12 xl:pt-[50px] bg-black">
+      <div class="container mx-auto pb-12 xl:pb-[100px]">
+        <div class="flex flex-col xl:flex-row justify-between">
+          <div class="footer__item flex-1">
+            <div class="flex mb-10">
+              <ul class="flex-1 flex flex-col gap-y-5 text-2xl font-semibold text-white">
+                <li><a href="#">Report a Location</a></li>
+                <li><a href="#">On-going Campaign</a></li>
+                <li><a href="#">Top Petitions</a></li>
+                <li><a href="#">Impact</a></li>
+                <li><a href="#">Langit Report</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__item flex flex-1 flex-col">
+            <a href="">
+              <img class="mb-[30px] xl:float-right sm:float-left" src="img/langitwatch-white.png" alt=""
+                style="width: 50%" />
+            </a>
+            <div class="flex xl:justify-end mb-2 gap-x-5">
+              <!-- Facebook Icon -->
+              <a href="#" class="text-white hover:text-white">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+              </a>
+
+              <!-- Twitter Icon -->
+              <a href="#" class="text-white hover:text-white">
+                <i class="fa-brands fa-x-twitter fa-2xl"></i>
+              </a>
+
+              <a href="#" class="text-white hover:text-white">
+                <i class="fa-brands fa-youtube fa-2xl"></i>
+              </a>
+
+              <a href="#" class="text-white hover:text-white">
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+  </div>
+  <!-- Extra Large Modal -->
+  <div id="defaultModal" tabindex="-1"
+    class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-7xl max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow white:bg-gray-700">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-5 border-b rounded-t white:border-gray-600">
+          <h3 class="text-xl font-medium text-gray-900 white:text-white">
+            Donate Now
+          </h3>
+          <button type="button"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center white:hover:bg-gray-600 white:hover:text-white"
+            data-modal-hide="defaultModal">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-6 space-y-6">
+          <p class="text-xl leading-relaxed text-gray-500 white:text-gray-400">
+            At the moment, Only partners can donate
+          </p>
+        </div>
+        <!-- Modal footer -->
+        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b white:border-gray-600">
+          <!-- <button data-modal-hide="extralarge-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
+                    <button data-modal-hide="extralarge-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- Swipper -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- Scroll Reveal -->
+  <script src="js/scrollreveal.min.js"></script>
+  <!-- Main js -->
+  <script src="js/main.js"></script>
+  <script>
+    function modalCyc() {
+      document.getElementById("modal_campaign").style.display = "block";
+      document.querySelector("body").style.overflowY = "hidden";
+    }
+    function closeModalcyc() {
+      document.getElementById("modal_campaign").style.display = "none";
+      document.querySelector("body").style.overflowY = "auto";
+    }
+    function closeModalmap() {
+      document.getElementById("modal_map").style.display = "none";
+    }
+    function showmap() {
+      let map, marker, clickMapListener;
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: -5.145357470781656, lng: 113.766312196875 },
+        zoom: 5,
+      });
+      clickMapListener = map.addListener("click", function (data) {
+        if (typeof marker != "undefined") marker.setMap(null);
+        marker = new google.maps.Marker({
+          position: data.latLng,
+          animation: google.maps.Animation.DROP,
+          map: map,
         });
-        clickMapListener = map.addListener("click", function (data) {
-          if (typeof marker != "undefined") marker.setMap(null);
-          marker = new google.maps.Marker({
-            position: data.latLng,
-            animation: google.maps.Animation.DROP,
-            map: map,
-          });
-          document.getElementById("location").value =
-            data.latLng.lat() + "," + data.latLng.lng();
-        });
-      }
-      function modalHero() {
-        document.getElementById("modal_hero").style.display = "block";
-        document.querySelector("body").style.overflowY = "hidden";
-      }
-      function closeModalHero() {
-        document.getElementById("modal_campaign").style.display = "none";
-        document.querySelector("body").style.overflowY = "auto";
-      }
-      function modalPetition() {
-        document.getElementById("modal_petition").style.display = "block";
-        document.querySelector("body").style.overflowY = "hidden";
-      }
-      function closeModalPetition() {
-        document.getElementById("modal_petition").style.display = "none";
-        document.querySelector("body").style.overflowY = "auto";
-      }
-      function modalPartner() {
-        document.getElementById("modal_partner").style.display = "block";
-        document.querySelector("body").style.overflowY = "hidden";
-      }
-      function closeModalPartner() {
-        document.getElementById("modal_partner").style, (display = "none");
-        document.querySelector("body").style.overflowY = "auto";
-      }
-    </script>
-  </body>
+        document.getElementById("location").value =
+          data.latLng.lat() + "," + data.latLng.lng();
+      });
+    }
+    function modalHero() {
+      document.getElementById("modal_hero").style.display = "block";
+      document.querySelector("body").style.overflowY = "hidden";
+    }
+    function closeModalHero() {
+      document.getElementById("modal_campaign").style.display = "none";
+      document.querySelector("body").style.overflowY = "auto";
+    }
+    function modalPetition() {
+      document.getElementById("modal_petition").style.display = "block";
+      document.querySelector("body").style.overflowY = "hidden";
+    }
+    function closeModalPetition() {
+      document.getElementById("modal_petition").style.display = "none";
+      document.querySelector("body").style.overflowY = "auto";
+    }
+    function modalPartner() {
+      document.getElementById("modal_partner").style.display = "block";
+      document.querySelector("body").style.overflowY = "hidden";
+    }
+    function closeModalPartner() {
+      document.getElementById("modal_partner").style, (display = "none");
+      document.querySelector("body").style.overflowY = "auto";
+    }
+  </script>
+</body>
+
 </html>
