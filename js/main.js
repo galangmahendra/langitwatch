@@ -28,22 +28,31 @@ async function SendCampaign(e) {
   e.preventDefault();
   const emailVal = $("#contact_email").val();
   const campaignNameVal = $("#campaign_name").val().trim();
-  const phoneNumberVal = $("#phone_number").val().trim()
+  const phoneNumberVal = $("#phone_number").val().trim();
+  const descriptionVal = $("#description").val();
+  const isValidEmail =  isValidEmailAddress(emailVal)
 
-  if (isValidEmailAddress(emailVal)) {
+  console.log(emailVal, "email")
+  console.log(campaignNameVal, "campaign")
+  console.log(phoneNumberVal, "phone")
+  console.log(descriptionVal, "desc")
+  console.log(isValidEmail, "valid")
+
+
+  if (isValidEmail && campaignNameVal !== "" && phoneNumberVal !== "" && descriptionVal !== "") {
     const data = {
       token: "enygma_flgddx",
       data: [
         {
           Custom_Unique_ID: $("#contact_email").val(),
-          Campaign_Name: $("#campaign_name").val(),
-          Maker_Phone_Number: $("#phone_number").val(),
-          Description: $("#description").val(),
-        },
+          Campaign_Name: campaignNameVal,
+          Maker_Phone_Number: phoneNumberVal,
+          Description: descriptionVal,
+        },   
       ],
     };
     let headersList = {
-      "Accept": "/",
+      Accept: "/",
       "User-Agent": "Thunder Client (https://www.thunderclient.com)",
       "Content-Type": "multipart/form-data",
     };
@@ -72,7 +81,7 @@ async function SendCampaign(e) {
       redirect: "follow",
     };
     console.log(settings, "test");
-    console.log(settings.body, 'body')
+    console.log(settings.body, "body");
 
     try {
       const response = await fetch(
